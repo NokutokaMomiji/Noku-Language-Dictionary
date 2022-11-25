@@ -23,19 +23,21 @@
 
 These are the basic cardinal numbers. With these, you can make up any number you need. To make a number, simply string the numbers together.
 
-**Ex:**
+### **Ex:**
+>
+> 23 -\> Bi + Tri = **Bitri.**
+>
+> 102 -\> Sien + Bi = **Sienbi.**
+>
+> 200 -\> Bi + Sien = **Bisien.**
 
-23 -\> Bi + Tri = **Bitri.**
-
-102 -\> Sien + Bi = **Sienbi.**
-
-200 -\> Bi + Sien = **Bisien.**
+<br>
 
 \*In the cases of numbers that end with a "t", if the next word starts with a consonant, you add the letter "i" between the words.
 
-**Ex:**
-
-72 -\> Sep**t + b**i = Sep**tib**i
+### **Ex:**
+> 
+> 72 -\> Sep**t + b**i = Sep**tib**i
 
 ## Ordinal Numbers
 
@@ -62,6 +64,6 @@ In order to turn a number from Cardinal to Ordinal, simply add the suffix "-iet"
 
 The suffix is only added at the end of the number, not between numbers.
 
-**Ex:**
-
-32 -\> Bitri + -iet -\> Bitr**iet**
+### **Ex:**
+> 
+> 32 -\> Bitri + -iet -\> Bitr**iet**

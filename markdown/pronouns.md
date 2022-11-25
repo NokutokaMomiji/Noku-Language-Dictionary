@@ -32,7 +32,7 @@ There are three categories of pronouns in Noku: **Direct** , **Indirect** and **
 
 ^If the verb is in Imperative, you use the Indirect pronoun.
 
-**Ex:**
+### **Ex:**
 > "Give **me** some coffee." -\> "Dadara **iko** seto foci."
 
 **Possessive pronouns** are used to indicate possession of an object or item.
