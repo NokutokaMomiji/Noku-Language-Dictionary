@@ -1,0 +1,2 @@
+gdown==4.5.3
+pypandoc==1.10
