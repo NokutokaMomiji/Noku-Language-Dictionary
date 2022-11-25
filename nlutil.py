@@ -218,8 +218,8 @@ if __name__ == "__main__":
     print(" · For official document, check the following link: ")
     print("   -> https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true")
     
-    create_nonexistent_directory("build")
     create_nonexistent_directory("src")
+    create_nonexistent_directory("build")
     create_nonexistent_directory("build/html")
 
     URL = "https://drive.google.com/uc?id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
