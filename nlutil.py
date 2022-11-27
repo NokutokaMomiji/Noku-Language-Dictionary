@@ -15,7 +15,7 @@ def open_file_to_list(file_path: str) -> list:
         return data_file.readlines()
 
 def load_saved_data():
-    with open("build/data.json") as stored_data_file:
+    with open("docs/data.json") as stored_data_file:
         return json.load(stored_data_file)
 
 def array_remove_empty_lines(array: list) -> list:
@@ -219,14 +219,14 @@ if __name__ == "__main__":
     print("   -> https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true")
     
     create_nonexistent_directory("src")
-    create_nonexistent_directory("build")
-    create_nonexistent_directory("build/html")
+    create_nonexistent_directory("docs")
+    create_nonexistent_directory("docs/data")
 
     URL = "https://drive.google.com/uc?id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
     
     TEMP_NAME = "src/temp.docx"
     OUTPUT_NAME = "src/noku_language_words.txt"
-    DATA_NAME = "build/data.json"
+    DATA_NAME = "docs/data.json"
     BACKUP_NAME = "src/backup.txt"
 
     exported_data = {}
