@@ -14,6 +14,9 @@
 
     <!-- Browser Title -->
     <title>Noku Dictionary - Main Page</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -54,8 +57,8 @@
     </div>
     <div class="content-center">
         <h1 id="word-title"></h1>
-        <br>
         <h2 id="word-type"></h2>
+        <h3 id="possible-verb-forms"></h3>
         <br>
         <br>
         <div class="content-block">
@@ -72,13 +75,29 @@
                 </ul>
             </blockquote>
         </div>
+
+        <br>
+        <br>
+
+        <div class="content-block" id="bottom-container">
+            <div id="content-before">
+            <a id="before-text">
+                <- hello
+            </a>
+            </div>
+            <div id="content-after">
+                <a id="after-text">
+                after ->
+                </a>
+            </div>
+        </div>
     </div>
     <script>
         function pageInit() {
             setWordPage();
         }
 
-        window.addEventListener("load", pageInit);
+        //window.addEventListener("load", pageInit);
     </script>
 </body>
 

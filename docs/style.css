@@ -13,7 +13,7 @@
     /*
     --navbar-height: 16vh;
 */
-    --navbar-height: 120px;
+    --navbar-height: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,7 +62,7 @@ p {
     display: flex;
     align-items: right;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 16px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -101,8 +101,9 @@ p {
     padding-top: 24px;
     padding-left: 0;
     background-color: var(--background-color);
-    border-radius: 6px;
+    border-radius: 8px;
     float: center;
+    box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.35);
     
 }
 
@@ -114,10 +115,11 @@ p {
     text-align: center;
     display: list-item;
     color: var(--background-color);
+    padding: 12px;
 }
 
 #navbar img {
-    height: calc(var(--navbar-height) - 32px);
+    height: calc(var(--navbar-height) - 16px);
     margin-right: auto;
     vertical-align: middle;
     margin-top: -8px;
@@ -130,6 +132,7 @@ p {
     margin-right: auto;
     text-align: center;
     vertical-align: middle;
+    padding-top: -8px;
     float: left;
 }
 
@@ -137,6 +140,9 @@ p {
     display: none;
 }
 
+#letter-list {
+    margin-right: 32px;
+}
 
 #letter-list li {
     list-style-type: circle;
@@ -151,6 +157,8 @@ p {
     font-weight: bold;
     font-size: 24px;
     padding: 8px;
+    border-radius: 8px;
+    border-style: none;
 }
 
 #letter-list a:hover {
@@ -158,6 +166,9 @@ p {
     background-color: var(--secondary-background-color);
     border-radius: 8px;
     padding: 8px;
+     
+    transition: ease-in-out;
+    transition-duration: 30ms;
 }
 
 #word-list {
@@ -195,11 +206,93 @@ p {
     color: var(--subtitle-color);
 }
 
+#word-type {
+    color: var(--subtitle-color);
+}
+
+#possible-verb-forms span {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+#word-definitions {
+    margin-right: 64px;
+    margin-left: 64px;
+    text-align: left;
+}
+
+#word-definitions li {
+    font-size: 24px;
+
+}
+
+#word-examples li {
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#word-examples li span {
+    font-style: italic; 
+    text-align: left;
+    font-weight: lighter;
+}
+
+#bottom-container {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 32px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#bottom-container a {
+    color:inherit;
+    text-decoration: none;
+}
+
+#bottom-container #content-before {
+    color: var(--text-color);
+    position: sticky;
+    text-align: left;
+    margin-left: 32px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding: 8px;
+}
+
+#bottom-container #content-after {
+    color: var(--text-color);
+    position: relative;
+    text-align: right;
+    float: right;
+    margin-right: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding: 8px;
+}
+
+#bottom-container #content-before:hover, #bottom-container #content-after:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 8px;
+}
+
 .content-center {
     width: auto; 
     text-align: center;
     align-items: center; 
     padding: 50px; 
+    margin-inline-start: 16px;
+    margin-inline-end: 16px;
 }
 
 hr {
@@ -236,10 +329,12 @@ table, th, td  {
 .content-block blockquote {
     display: inline-block;
     background-color: var(--accent-color);
+    color: #F0F0F0;
     width: auto;
     border-radius: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
+    padding-right: 24px;
     box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.35);
 }
 
