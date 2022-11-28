@@ -137,6 +137,64 @@ p {
     display: none;
 }
 
+
+#letter-list li {
+    list-style-type: circle;
+    display: inline-block;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#letter-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 8px;
+}
+
+#letter-list a:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#word-list {
+    text-align: left;
+}
+
+#word-list li {
+    padding: 8px 10px;
+    font-size: 18px;
+}
+
+#word-list a {
+    text-align: left;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+#word-list a:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#word-list a:hover > span {
+    color: var(--background-color);
+    font-weight: lighter;
+}
+
+#word-list a span {
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--subtitle-color);
+}
+
 .content-center {
     width: auto; 
     text-align: center;

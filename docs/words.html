@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Import Stuff -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Noku is a simple, new spoken / written language with sensible and simple rules and structure. ">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Noku, Language, Languages, Simple, Dictionary">
+    <meta name="author" content="Nokutoka Momiji">
+
+    <!-- Browser Title -->
+    <title>Noku Dictionary - ???</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <img src="data/noku_logo_black.png">
+            <h1>Noku Language</h1></img>
+            <ul id="main-bar">
+                <li>
+                    <a>Introduction</a>
+                    <ul class="navbar-sub">
+                        <li><a href="numbers.html">Numbers</a></li>
+                        <li><a href="pronouns.html">Pronouns</a></li>
+                        <li><a href="verb_conjugation.html">Verb Conjugation</a></li>
+                        <li href="sentence_formation.html"><a>Sentence Formation</a></li>
+                    </ul>
+                </li>
+                <li><a href="words.html?letter=A">Words</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true">Document Version</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="navmenu">
+        <nav>
+            <li>
+                
+            </li>
+        </nav>
+    </div>
+
+    <div>
+        
+
+    </div>
+    <div class="content-center">
+        <h1 id="introduction-title">Introduction</h1>
+        <br>
+        <p>Here you will translations of words in Noku to English. If you do not know the meaning of a word, you should search it on an English dictionary.</p>
+        <p>(Constantly being updated with words and example sentences.)</p>
+        <br>
+        <br>
+        <div class="content-block">
+            <h1>Indexes</h1>
+            <ul id="letter-list">
+
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="content-block">
+            <h2 id="current-letter">?</h2>
+            <p id="letter-description">???</p>
+            <ul id="word-list">
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        function pageInit() {
+            setLetterList();
+            setWordList();
+        }
+
+        window.addEventListener("load", pageInit);
+    </script>
+</body>
+
+</html>
