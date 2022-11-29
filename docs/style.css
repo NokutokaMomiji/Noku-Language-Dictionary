@@ -38,7 +38,7 @@ body {
     background: linear-gradient(180deg, var(--background-color) 0%, var(--background-color-bottom) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1a1a",endColorstr="#000000",GradientType=1);
     font-family: 'Raleway', sans-serif;
-    padding-top: var(--navbar-height);
+    margin-top: var(--navbar-height);
     color: var(--text-color);
 }
 
@@ -64,13 +64,13 @@ p {
     justify-content: space-between;
     padding-top: 16px;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 #navbar nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 12px;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -80,7 +80,6 @@ p {
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
-    
 }
 
 #navbar nav ul li a:hover {
@@ -97,8 +96,7 @@ p {
     display: none;
     position: absolute;
     align-items: center;
-    margin: 0;
-    padding-top: 24px;
+    padding-top: 16px;
     padding-left: 0;
     background-color: var(--background-color);
     border-radius: 8px;
@@ -136,6 +134,40 @@ p {
     float: left;
 }
 
+#small-search-input {
+    width: 96px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    /*box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.35);*/
+    border-style: solid;
+    border-color: var(--secondary-background-color);
+    border-radius: 8px;
+    padding-left: 8px;
+}
+
+#full-search-input, #full-search-input-mobile {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 2px 16px;
+    /*box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.35);*/
+    border-style: solid;
+    border-color: var(--background-color-bottom);
+    border-radius: 8px;
+    padding-left: 8px;
+    width: 64vw;
+    height: 32px;
+}
+
+#full-search-input:focus, #full-search-input-mobile:focus {
+    font-weight: normal;
+}
+
 #navmenu {
     display: none;
 }
@@ -171,16 +203,16 @@ p {
     transition-duration: 30ms;
 }
 
-#word-list {
+#word-list, #matching-noku, #matching-english, #matching-noku-mobile, #matching-english-mobile {
     text-align: left;
 }
 
-#word-list li {
+#word-list li, #matching-noku li, #matching-english li, #matching-noku-mobile li, #matching-english-mobile li {
     padding: 8px 10px;
     font-size: 18px;
 }
 
-#word-list a {
+#word-list a, #matching-noku a, #matching-english a, #matching-noku-mobile a, #matching-english-mobile a {
     text-align: left;
     color: var(--text-color);
     text-decoration: none;
@@ -188,21 +220,22 @@ p {
     padding: 8px;
 }
 
-#word-list a:hover {
+#word-list a:hover, #matching-noku a:hover, #matching-english a:hover, #matching-noku-mobile a:hover, #matching-english-mobile a:hover {
     color: var(--background-color);
     background-color: var(--secondary-background-color);
     border-radius: 8px;
     padding: 8px;
 }
 
-#word-list a:hover > span {
+#word-list a:hover > span, #matching-noku a:hover > span, #matching-english a:hover > span, #matching-noku-mobile a:hover > span, #matching-english-mobile a:hover > span {
     color: var(--background-color);
     font-weight: lighter;
 }
 
-#word-list a span {
+#word-list a span, #matching-noku a span, #matching-english a span, #matching-noku-mobile a span, #matching-english-mobile a span {
     font-weight: lighter;
     font-style: italic;
+    font-size: 17px;
     color: var(--subtitle-color);
 }
 
@@ -250,7 +283,7 @@ p {
 }
 
 #bottom-container a {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -284,6 +317,10 @@ p {
     color: var(--background-color);
     background-color: var(--secondary-background-color);
     border-radius: 8px;
+}
+
+.hidden {
+    display: none;
 }
 
 .content-center {
@@ -326,6 +363,25 @@ table, th, td  {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+.content-block a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-block a:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+    padding: 0px 2px;
+    font-weight: bold;
+}
+
+.content-block h2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .content-block blockquote {
     display: inline-block;
     background-color: var(--accent-color);
@@ -336,11 +392,50 @@ table, th, td  {
     padding-bottom: 4px;
     padding-right: 24px;
     box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.35);
+    text-decoration: none;
 }
 
-.content-block blockquote p {
+.content-block blockquote p, .content-block blockquote a {
     font-style: italic;
     color: #F8F8F8;
+    text-decoration: none;
+}
+
+.content-block blockquote a:hover {
+    color: var(--accent-color);
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    padding: 0px 2px;
+    font-weight: bold;
+}
+
+.content-sides {
+    display: flex;
+    align-content: flex-start;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.block-on-left {
+    text-align: inherit;
+    width: 40vw;
+    float: left;
+}
+
+.block-on-right {
+    text-align: inherit;
+    float: right;
+    width: 40vw;
+}
+
+.block-on-left p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.block-on-right p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footnote {
@@ -367,7 +462,15 @@ table, th, td  {
     font-weight: 400;
 }
 
-@media screen and (max-width: 600px) {
+.for-mobile {
+    display: none;
+}
+
+*:focus {
+    outline-color: var(--secondary-background-color);
+}
+
+@media screen and (max-width: 815px) {
     .content-center {
         padding-left: 24px;
         padding-right: 14px;
@@ -378,11 +481,35 @@ table, th, td  {
         padding-top: 6px;
         font-size: 22px;
     }
+
+    #full-search-input {
+        display: none;
+    }
+
+    .content-sides {
+        display: none;
+    }
+
+    .for-mobile {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     #navbar nav ul {
         display: none;
+    }
+
+    .block-on-left {
+        text-align: inherit;
+        width: 36vw;
+        float: left;
+    }
+    
+    .block-on-right {
+        text-align: inherit;
+        float: right;
+        width: 36vw;
     }
 }
 

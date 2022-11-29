@@ -1,4 +1,5 @@
 var dictionaryData = {};
+var hasLoaded = false;
 
 fetch("data/data.json").then(response => response.json())
                        .then(data => Setup(data))
@@ -7,10 +8,12 @@ fetch("data/data.json").then(response => response.json())
 console.log(dictionaryData);
 
 function Setup(data) {
+    console.log("Setup called!")
     dictionaryData = data;
     setLetterList();
     setWordList();
     setWordPage();
+    hasLoaded = true;
 }
 
 function getLetters() {
@@ -48,7 +51,7 @@ function setWordList() {
     var letter = new URLSearchParams(window.location.search).get("letter");
     if (letter == null) {
         console.error("Letter returned null.");
-        return setWordList();
+        return;
     }
 
     var words = dictionaryData[letter]["words"];
@@ -80,6 +83,11 @@ function setWordList() {
 function setWordPage() {
     var letter = new URLSearchParams(window.location.search).get("letter");
     var word = new URLSearchParams(window.location.search).get("word");
+
+    if (letter == undefined || word == undefined) {
+        return;
+    }
+
     var words = dictionaryData[letter]["words"];
     var wordData = undefined;
 
@@ -138,4 +146,116 @@ function setWordPage() {
             break;
         }
     }
+}
+
+function onlySpaces(str) {
+    return str.trim().length === 0;
+}
+
+function fullSearch() {
+    fullSearchData("full-search-input", "matching-noku", "matching-english", "no-matches-noku", "no-matches-english");
+}
+
+function fullSearchMobile() {
+    
+    fullSearchData("full-search-input-mobile", "matching-noku-mobile", "matching-english-mobile", "no-matches-noku-mobile", "no-matches-english-mobile");
+}
+
+function fullSearchData(search_bar, matching_noku, matching_english, no_matches_noku, no_matches_english) {
+    console.log("Full Search Called...")
+    if (!hasLoaded) {
+        console.log("Dictionary Data hasn't loaded yet.")
+        return;
+    }
+    const searchBar = document.getElementById(search_bar);
+    console.log("Search Bar Value: \"" + searchBar.value + "\"");
+
+    document.getElementById("full-search-input").value = searchBar.value;
+    document.getElementById("full-search-input-mobile").value = searchBar.value;
+    const matchingNokuList = document.getElementById(matching_noku);
+    const matchingEnglishList = document.getElementById(matching_english);
+    const noMatchesNoku = document.getElementById(no_matches_noku);
+    const noMatchesEnglish = document.getElementById(no_matches_english);
+    const didntFind = document.getElementById("didnt-find");
+
+    const letters = getLetters();
+
+    matchingNokuList.innerHTML = "";
+
+    matchingEnglishList.innerHTML = "";
+
+    if (onlySpaces(searchBar.value) || searchBar.value == "") {
+        console.log("Empty.")
+        noMatchesNoku.style.display = "initial";
+        noMatchesEnglish.style.display = "initial";
+        didntFind.style.display = "block";
+        return;
+    }
+
+    var matchedNoku = false;
+
+    for (var i = 0; i < letters.length; i++) {
+        var words = dictionaryData[letters[i]]["words"];
+        for (var n = 0; n < words.length; n++) {
+            var currentWordData = words[n];
+
+            if (currentWordData["word"].toLowerCase().startsWith(searchBar.value.toLowerCase())) {
+                var newSearchItem = document.createElement("li");
+                var newSearchLink = document.createElement("a");
+                newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>";
+                newSearchLink.href = "word.html?letter=" + letters[i] + "&word=" + currentWordData["word"];
+                newSearchItem.appendChild(newSearchLink);
+                matchingNokuList.appendChild(newSearchItem);
+
+                matchedNoku = true;
+            }
+        }
+    }
+
+    if (!matchedNoku) {
+        noMatchesNoku.style.display = "initial";
+        didntFind.style.display = "block";
+    }
+    else {
+        noMatchesNoku.style.display = "none";
+        didntFind.style.display = "none";
+    }
+
+    var matchedEnglish = false;
+
+    for (var i = 0; i < letters.length; i++) {
+        var words = dictionaryData[letters[i]]["words"];
+        for (var n = 0; n < words.length; n++) {
+            var currentWordData = words[n];
+
+            for (var j = 0; j < currentWordData["definitions"].length; j++) {
+                var currentDefinition = currentWordData["definitions"][j];
+
+                if (new RegExp("\\b" + searchBar.value.toLowerCase() + "\\b").test(currentDefinition.toLowerCase()) || currentDefinition.toLowerCase().startsWith(searchBar.value.toLowerCase())) {
+                    console.log("Match: " + currentDefinition);
+                    var newSearchItem = document.createElement("li");
+                    var newSearchLink = document.createElement("a");
+                    newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>  -> <span>\"" + currentDefinition + "\"</span>";
+                    newSearchLink.href = "word.html?letter=" + letters[i] + "&word=" + currentWordData["word"];
+                    newSearchItem.appendChild(newSearchLink);
+                    matchingEnglishList.appendChild(newSearchItem);
+
+                    matchedEnglish = true;
+                }
+            }
+        }
+    }
+
+    if (!matchedEnglish) {
+        noMatchesEnglish.style.display = "initial";
+        didntFind.style.display = "block";
+    }
+    else {
+        noMatchesEnglish.style.display = "none";
+        didntFind.style.display = "none";
+    }
+}
+
+function smallSearch() {
+    
 }

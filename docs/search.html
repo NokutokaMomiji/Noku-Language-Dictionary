@@ -13,9 +13,11 @@
     <meta name="author" content="Nokutoka Momiji">
 
     <!-- Browser Title -->
-    <title>Noku Dictionary - ???</title>
+    <title>Noku Dictionary - Search</title>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="lodash.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -58,33 +60,71 @@
 
     </div>
     <div class="content-center">
-        <h1 id="introduction-title">Words</h1>
-        <br>
-        <p>Here you will translations of words in Noku to English. If you do not know the meaning of a word, you should search it on an English dictionary.</p>
-        <p>(Constantly being updated with words and example sentences.)</p>
+        <h1 id="introduction-title">Search</h1>
         <br>
         <br>
         <div class="content-block">
-            <h1>Indexes</h1>
-            <ul id="letter-list">
+            <input type="text" placeholder="Search..." id="full-search-input" onkeyup="fullSearch()" onchange="fullSearch()" onfocus="fullSearch()">
+            <input type="text" placeholder="Search..." class="for-mobile" id="full-search-input-mobile" onkeyup="fullSearchMobile()" onchange="fullSearchMobile()">
+        </div>
+    </div>
+    
+    <div class="content-center for-mobile">
+        <div class="content-block">
+            <h2>Matching Word...</h2>
+            <p>Here are the words in Noku that match the search value.</p>
+            <ul id="matching-noku-mobile">
 
             </ul>
+            <p style="display: initial" id="no-matches-noku-mobile"><i>No matches found.</i></p>
         </div>
         <br>
+        <br>
         <div class="content-block">
-            <h2 id="current-letter">?</h2>
-            <p id="letter-description">???</p>
-            <ul id="word-list">
+            <h2>Matching Definition...</h2>
+            <p>Here are the words in Noku that have a matching definition.</p>
+            <ul id="matching-english-mobile">
 
             </ul>
+            <p style="display: initial" id="no-matches-english-mobile"><i>No matches found.</i></p>
         </div>
+    </div>
+
+    <div class="content-center content-sides">
+        <div class="content-block block-on-left">
+            <h2>Matching Words</h2>
+            <p>Here are the words in Noku that match the search value.</p>
+            <ul id="matching-noku">
+
+            </ul>
+            <p style="display: initial" id="no-matches-noku"><i>No matches found.</i></p>
+        </div>
+        <br>
+        <br>
+        <div class="content-block block-on-right">
+            <h2>Matching Definitions</h2>
+            <p>Here are the words in Noku that have a matching definition.</p>
+            <ul id="matching-english">
+
+            </ul>
+            <p style="display: initial" id="no-matches-english"><i>No matches found.</i></p>
+        </div>
+        <div style="float:none"></div>
     </div>
     <br>
     <br>
+    <div class="content-center content-block" style="display:block">
+        <blockquote>
+            <p>
+                Didn't find what you were looking for?
+                Recommend a word <a href="https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true">here</a>!
+            </p>
+        </blockquote>
+    </div>
+    <br>
     <script>
         function pageInit() {
-            setLetterList();
-            setWordList();
+            setWordPage();
         }
 
         //window.addEventListener("load", pageInit);
