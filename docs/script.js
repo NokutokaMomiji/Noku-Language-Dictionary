@@ -157,7 +157,6 @@ function fullSearch() {
 }
 
 function fullSearchMobile() {
-    
     fullSearchData("full-search-input-mobile", "matching-noku-mobile", "matching-english-mobile", "no-matches-noku-mobile", "no-matches-english-mobile");
 }
 
@@ -172,6 +171,7 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
 
     document.getElementById("full-search-input").value = searchBar.value;
     document.getElementById("full-search-input-mobile").value = searchBar.value;
+
     const matchingNokuList = document.getElementById(matching_noku);
     const matchingEnglishList = document.getElementById(matching_english);
     const noMatchesNoku = document.getElementById(no_matches_noku);
@@ -214,11 +214,11 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
 
     if (!matchedNoku) {
         noMatchesNoku.style.display = "initial";
-        didntFind.style.display = "block";
+        //didntFind.style.display = "block";
     }
     else {
         noMatchesNoku.style.display = "none";
-        didntFind.style.display = "none";
+        //didntFind.style.display = "none";
     }
 
     var matchedEnglish = false;
@@ -248,11 +248,11 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
 
     if (!matchedEnglish) {
         noMatchesEnglish.style.display = "initial";
-        didntFind.style.display = "block";
+        //didntFind.style.display = "block";
     }
     else {
         noMatchesEnglish.style.display = "none";
-        didntFind.style.display = "none";
+        //didntFind.style.display = "none";
     }
 }
 
