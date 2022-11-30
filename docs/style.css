@@ -20,9 +20,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --title-color: #F8F8F8;
-        --subtitle-color: #8A8A8A;
-        --background-color: #2A2A2A;
-        --background-color-bottom: #0A0A0A;
+        --subtitle-color: #9c9b9b;
+        --background-color: #353535;
+        --background-color-bottom: #151515;
         --secondary-background-color: #F8F8F8;
         --text-color: #F8F8F8;
     }
@@ -487,8 +487,10 @@ table, th, td  {
 #menu-toggle input
   {
     display: flex;
-    width: 40px;
+    width: 45px;
     height: 32px;
+    top: 15px;
+    left: -15px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -543,12 +545,12 @@ table, th, td  {
     position: absolute;
     overflow: auto;
     width: var(--navmenu-width);
-    height: 100vh;
+    height: calc(100vh - 116px);
     box-shadow: 0 0 10px rgba(0,0,0,0.35);;
     margin: -50px 0 0 0px;
     padding: 32px;
     padding-top: 116px;
-    background-color: #F5F6FA;
+    background-color: var(--background-color);
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     left: 100%;
