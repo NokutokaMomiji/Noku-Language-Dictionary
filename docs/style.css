@@ -39,12 +39,18 @@ body {
     background: linear-gradient(180deg, var(--background-color) 0%, var(--background-color-bottom) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1a1a",endColorstr="#000000",GradientType=1);
     font-family: 'Raleway', sans-serif;
-    margin-top: var(--navbar-height);
+    padding-top: var(--navbar-height);
     color: var(--text-color);
 }
 
 p {
     color: var(--text-color);
+}
+
+ion-icon {
+    color: inherit;
+    vertical-align: middle;
+    margin-top: -4px;
 }
 
 #navbar {

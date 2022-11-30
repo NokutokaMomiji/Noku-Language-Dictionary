@@ -96,8 +96,10 @@ function setWordPage() {
     var possibleVerbForms = document.getElementById("possible-verb-forms");
     var wordDefinitions = document.getElementById("word-definitions");
     var wordExamples = document.getElementById("word-examples");
-    var contentBefore = document.getElementById("before-text");
-    var contentAfter = document.getElementById("after-text");
+    var contentBefore = document.getElementById("content-before");
+    var contentAfter = document.getElementById("content-after");
+    var beforeText = document.getElementById("before-text");
+    var afterText = document.getElementById("after-text");
 
     for (var i = 0; i < words.length; i++) {
         if (words[i]["word"] == word) {
@@ -126,20 +128,25 @@ function setWordPage() {
                 newExample.appendChild(newTranslated);
                 wordExamples.appendChild(newExample);
             }
+            
+            var backArrow = "<ion-icon name=\"chevron-back\"></ion-icon> ";
+            var forwardArrow = " <ion-icon name=\"chevron-forward\"></ion-icon>";
 
             if (i != 0) {
-                contentBefore.textContent = words[i - 1]["word"];
-                contentBefore.href = "word.html?letter=" + letter + "&word=" + words[i - 1]["word"];
+                beforeText.innerHTML = backArrow + words[i - 1]["word"];
+                beforeText.href = "word.html?letter=" + letter + "&word=" + words[i - 1]["word"];
             }
             else {
+                contentBefore.innerHTML = "";
                 contentBefore.remove();
             }
             
             if (i != words.length - 1) {
-                contentAfter.textContent = words[i + 1]["word"];
-                contentAfter.href = "word.html?letter=" + letter + "&word=" + words[i + 1]["word"];
+                afterText.innerHTML = words[i + 1]["word"] + forwardArrow;
+                afterText.href = "word.html?letter=" + letter + "&word=" + words[i + 1]["word"];
             }
             else {
+                contentAfter.innerHTML = "";
                 contentAfter.remove();
             }
 
