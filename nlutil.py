@@ -47,6 +47,7 @@ def word_info_to_dict(info_line: str) -> dict:
     word_definitions = []
     current_definition = ""
     in_quotations = False
+    in_parenthesis = False
 
     in_word = True
     in_info = False
@@ -71,14 +72,22 @@ def word_info_to_dict(info_line: str) -> dict:
 
     # Reading definitions and adding them to a definitions array.
     for char in line_contents[1]:
-        if char == " " and not in_quotations:
+        if char == " " and not in_quotations and not in_parenthesis:
             continue
 
-        if char == "\"":
+        if char == "\"" and not in_parenthesis:
             in_quotations = not in_quotations
             continue
 
-        if (char == "," and in_quotations) or char != ",":
+        if char == "(":
+            in_parenthesis = True
+            continue
+
+        if char == ")":
+            in_parenthesis = False
+            continue
+        
+        if (char == "," and in_quotations and not in_parenthesis) or char != ",":
             current_definition += char
             continue
         

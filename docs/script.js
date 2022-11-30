@@ -105,7 +105,7 @@ function setWordPage() {
             wordTitle.textContent = word;
             wordType.textContent = wordData["type"];
             if (wordData["type"].includes("Verb")) {
-                possibleVerbForms.innerHTML = "Past: <span>" + word + "anon" + "</span> | Future: <span>" + word + "rian" + "</span> | Imperative: <span>" + word.slice(0, 2) + word.toLowerCase() + "</span>"
+                possibleVerbForms.innerHTML = "Past: <span>" + word + ((word.endsWith("a")) ? "non" : "anon") + "</span> | Future: <span>" + word + "rian" + "</span> | Imperative: <span>" + word.slice(0, 2) + word.toLowerCase() + "</span>"
             }
             for (var n = 0; n < wordData["definitions"].length; n++) {
                 var newDefinition = document.createElement("li");
