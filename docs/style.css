@@ -10,6 +10,10 @@
     --secondary-background-color: #1A1A1A;
     --text-color: #1A1A1A;
     --accent-color: #4677ff;
+    --blue-color: #46e6ff;
+    --green-color: #46ff87;
+    --red-color: #ff6246;
+    --purple-color: #9c46ff;
     /*
     --navbar-height: 16vh;
 */
@@ -382,6 +386,22 @@ table, th, td  {
     border-radius: 4px;
     padding: 0px 2px;
     font-weight: bold;
+}
+
+.content-block .red {
+    color: var(--red-color);
+}
+
+.content-block .green {
+    color: var(--green-color);
+}
+
+.content-block .blue {
+    color: var(--blue-color);
+}
+
+.content-block .purple {
+    color: var(--purple-color);
 }
 
 .content-block h2 {

@@ -51,7 +51,7 @@ function setWordList() {
     var letter = new URLSearchParams(window.location.search).get("letter");
     if (letter == null) {
         console.error("Letter returned null.");
-        return;
+        letter = "A";
     }
 
     var words = dictionaryData[letter]["words"];
@@ -127,6 +127,10 @@ function setWordPage() {
                 newExample.appendChild(newBreak)
                 newExample.appendChild(newTranslated);
                 wordExamples.appendChild(newExample);
+            }
+
+            if (wordData["examples"].length == 0) {
+                wordExamples.innerHTML = "";
             }
             
             var backArrow = "<ion-icon name=\"chevron-back\"></ion-icon> ";
