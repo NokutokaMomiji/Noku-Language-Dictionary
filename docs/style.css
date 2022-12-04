@@ -53,6 +53,7 @@ p {
 
 ion-icon {
     color: inherit;
+    z-index: inherit;
     vertical-align: middle;
     margin-top: -4px;
 }
@@ -182,6 +183,12 @@ ion-icon {
 /*#navmenu {
     display: none;
 }*/
+
+#last-update {
+    color: var(--subtitle-color);
+    text-align: center;
+    font-size: smaller;
+}
 
 #letter-list {
     margin-right: 32px;

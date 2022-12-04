@@ -1,11 +1,24 @@
 var dictionaryData = {};
+var Metadata = {};
 var hasLoaded = false;
+var hasLoadedMeta = false;
 
 fetch("data/data.json").then(response => response.json())
                        .then(data => Setup(data))
                        .catch(error => console.error(error));
 
+fetch("data/metadata.json").then(response => response.json())
+                        .then(data => otherSetup(data))
+                        .catch(error => console.error(error));
+
 console.log(dictionaryData);
+
+function otherSetup(data) {
+    console.log("Other Setup Called!")
+    Metadata = data;
+    hasLoadedMeta = true;
+    setWordList();
+}
 
 function Setup(data) {
     console.log("Setup called!")
@@ -58,9 +71,18 @@ function setWordList() {
     var wordTitle = document.getElementById("current-letter");
     var wordDescription = document.getElementById("letter-description");
     var wordList = document.getElementById("word-list");
+    var wordCounter = document.getElementById("word-counter");
+    var lastUpdate = document.getElementById("last-update");
 
     if (wordTitle == undefined || wordDescription == undefined || wordList == undefined) {
         return;
+    }
+
+    if (hasLoadedMeta) {
+        wordCounter.innerText = "There are currently " + Metadata["num_of_words"] + " words in the Noku Dictionary."
+        console.log("Metadata timestamp: " + String(Metadata["timestamp"]))
+        var date = new Date(Metadata["timestamp"] * 1000);
+        lastUpdate.innerText = "Last updated on " + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
     }
 
     document.title = "Noku Language - " + letter;

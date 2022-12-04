@@ -1,4 +1,614 @@
-﻿Adali (Modifier): “Easy (difficulty).”
+﻿Noku Language
+Noku to English Dictionary
+(Because, I mean, why not?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nokutoka Momiji
+Index
+
+
+
+
+
+
+Introduction        2
+Numbers        3
+Cardinal numbers        3
+Ordinal Numbers        4
+Pronouns        4
+Verb Conjugation        6
+Sentence Formation        9
+Standard Sentences        9
+Questions        10
+Conditionals        11
+Words        12
+A        13
+B        16
+D        18
+E        19
+F        20
+G        21
+H        22
+I        24
+J        26
+K        27
+L        30
+M        32
+N        35
+O        38
+P        40
+R        42
+S        43
+T        45
+U        47
+V        49
+W        50
+X        51
+Y        52
+
+
+
+
+Introduction
+
+
+Welcome to the Official Noku to English Dictionary, made by yours truly. This should serve as an aid for making sentences and possible conversations in Noku. 
+
+
+Noku was created as an attempt to create a simpler, new language with sensible and simple rules and structure. It should be easy for an English native to use. It would simply require knowing the appropriate words and rules.
+
+
+Noku utilizes the most of the letters in the standard Latin alphabet, having 23 letters. There are no accents or special characters.
+
+
+If you would like to skip the rules, simply go to the Words section. You can find the appropriate page number in the Index on the previous page.
+________________
+Numbers
+Cardinal numbers
+
+
+Number
+	English
+	Noku
+	0
+	Zero
+	Sero
+	1
+	One
+	Mon
+	2
+	Two
+	Bi
+	3
+	Three
+	Tri
+	4
+	Four
+	Kuat
+	5
+	Five
+	*Pint
+	6
+	Six
+	Hixo
+	7
+	Seven
+	*Sept
+	8
+	Eight
+	Okto
+	9
+	Nine
+	Nove
+	10
+	Ten
+	Dien
+	20
+	Twenty
+	Bidien
+	100
+	One Hundred
+	Sien
+	1000
+	One Thousand
+	Mien
+	1000000
+	One Million
+	Milien
+	10000000
+	One Billion
+	Bilien
+	
+
+
+
+These are the basic cardinal numbers. With these, you can make up any number you need. To make a number, simply string the numbers together.
+
+
+Ex: 
+23 -> Bi + Tri = Bitri.
+102 -> Sien + Bi = Sienbi.
+200 -> Bi + Sien = Bisien.
+
+
+*In the cases of numbers that end with a “t”, if the next word starts with a consonant, you add the letter “i” between the words.
+Ex:
+72 -> Sept + bi = Septibi
+
+
+Ordinal Numbers
+
+
+In order to turn a number from Cardinal to Ordinal, simply add the suffix “-iet” at the end. Take a look at the following table:
+
+
+Number
+	Cardinal
+	Ordinal
+	0
+	Sero
+	Seroiet
+	1
+	Mon
+	Moniet
+	2
+	Bi
+	Biet
+	3
+	Tri
+	Triet
+	4
+	Kuat
+	Kuatiet
+	5
+	Pint
+	Pintiet
+	6
+	Hixo
+	Hixoiet
+	7
+	Sept
+	Septiet
+	8
+	Okto
+	Oktoiet
+	9
+	Nove
+	Noveiet
+	10
+	Dien
+	Dieniet
+	20
+	Bidien
+	Bidieniet
+	100
+	Sien
+	Sieniet
+	1000
+	Mien
+	Mieniet
+	1000000
+	Milien
+	Milieniet
+	10000000
+	Bilien
+	Bilieniet
+	
+
+
+
+The suffix is only added at the end of the number, not between numbers. 
+
+
+Ex:
+32 -> Bitri + -iet -> Bitriet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+Pronouns
+
+
+There are three categories of pronouns in Noku: Direct, Indirect and Possession. Each category is made up of 7 pronouns.
+
+
+Direct pronouns are pronouns used to refer to the subject of the sentence. As previously stated, there are 7 pronouns.
+
+
+Person
+	Number
+	English
+	Noku
+	1st Person
+	Singular
+	I
+	Ako
+	*Plural (Inclusive)
+	We
+	Ano
+	*Plural Exclusive
+	We
+	Ani
+	2nd Person
+	Singular
+	You
+	Tako
+	Plural
+	You
+	Tano
+	3rd Person
+	Singular
+	He / She / They
+	**Mako
+	Plural
+	They
+	Mano
+	
+
+*The inclusive pronoun includes the listener (you and me / us). The exclusive pronoun excludes them (me / us but not you).
+**Noku is a gender-less language, meaning there are no gendered words or pronouns.
+
+
+Indirect pronouns are pronouns used to refer to an object which is not the subject of the sentence.
+
+
+Person
+	Number
+	English
+	Noku
+	1st Person
+	Singular
+	Me
+	Iko
+	Plural (Inclusive)
+	Us
+	Ino
+	Plural (Exclusive)
+	Us
+	Ini
+	2nd Person
+	Singular
+	You
+	Kayo
+	Plural
+	You
+	Kano
+	3rd Person
+	Singular
+	Them
+	Siyo
+	Plural
+	Them
+	Sino
+	
+
+
+
+
+
+If the verb is in Imperative, you use the Indirect pronoun. 
+Ex: 
+“Give me some coffee.” -> “Dadara iko seto foci.”
+
+
+
+
+Possessive pronouns are used to indicate possession of an object or item.
+
+
+Person
+	Number
+	English
+	Noku
+	1st Person
+	Singular
+	Mine
+	Ma
+	Plural (Inclusive)
+	Our / Ours
+	Mon
+	Plural (Exclusive)
+	Our / Ours
+	Mion
+	2nd Person
+	Singular
+	Your / Yours
+	Ka
+	Plural
+	Your / Yours
+	Kon
+	3rd Person
+	Singular
+	His / Hers / Theirs
+	Sa
+	Plural
+	Theirs
+	Son
+	
+
+
+
+To refer to an inanimate object, you can use the pronoun “ito” (Direct and Indirect) and “itos” (Possessive).
+
+
+________________
+Verb Conjugation
+
+
+Verbs in Noku are easy to conjugate. There are four types of verb conjugation in Noku: Present, Past, Future and Imperative. To demonstrate every conjugation type, we will be using the verb “To Be”: “Mai”
+
+
+The Present conjugation is used to indicate that an action is happening in the current moment. This conjugation merely utilizes the verb root and is the same as the infinitive form.
+
+
+Ex:
+I am -> Ako mai.
+You are -> Tako mai.
+He / She is -> Mako mai.
+
+
+
+
+The Past conjugation is used to indicate that an action happened previous to the current moment. This conjugation is done by appending the suffix “-anon” to the verb root.
+
+
+Ex:
+I was -> Ako maianon.
+You were -> Tako maianon.
+He / She was -> Mako maianon.
+
+
+
+
+The Future conjugation is used to indicate that an action will happen in the, well, future. This conjugation is done by appending the suffix “-rian” to the verb root.
+
+
+Ex:
+I will be -> Ako mairian.
+You will be -> Tako mairian.
+He / She will be -> Mako mairian.
+
+
+The Imperative conjugation is used to order someone or give instructions to do something. This conjugation can only be used with Action verbs. This conjugation is done by simply repeating the first syllable, or first consonant and vowel in certain cases, before the root verb. Look at the following example using the verb “To Think”: “Mikiro”.
+
+
+Ex:
+Think, Gura! -> Mimikiro, Gura!
+
+
+Or the following example, giving an instruction using the verb “To press”: “Neka”
+
+
+Ex:
+Press [Z] to interact. -> Neneka [Z] interako.
+
+
+The imperative conjugation can only be used with either a noun, as done in the previous example, or with the 2nd Person Direct Pronoun (either singular or plural).
+
+
+
+
+The Present conjugation is also used as the present participle of the word.
+
+
+Ex:
+I was being nice! -> Ako maianon mai nindo!
+
+
+The Past conjugation is also used as the past particle of the word.
+
+
+Ex:
+I had warned you. -> Ako milikianon amaranon kayo.
+________________
+
+
+Sentence Formation
+Standard Sentences
+
+
+In most cases, sentences in Noku follow a similar structure to English sentences. 
+
+
+Ex:
+I want coffee. -> Ako nalo fosi.
+
+
+However, sentences in Noku are bound by certain rules depending on the type of sentence. 
+
+
+
+
+Normal sentences always follow a Subject-Verb-Object structure:
+
+
+Ex: 
+I am a nice person. -> Ako mai ang nindo imaniti.
+Well, I love you. -> Owu, ako ame kayo.
+
+
+Owu ako ame kayo -> THIS IS INCORRECT (X).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questions
+
+
+Questions follow a Question Word / Conditional (if any) - Verb - Subject - Object structure:
+
+
+Ex: 
+How are you doing? -> Gama mai tako lakan?
+
+
+Keep in mind that this applies to all questions. So when translating from English to Noku, you may have to switch things around or add things.
+
+
+Ex: 
+You did that? -> Lakananon tako eto?
+Did what? -> Apo lakananon ako?
+________________
+
+
+Conditionals
+________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Words
+
+
+Here you will translations of words in Noku to English. If you do not know the meaning of a word, you should search it on an English dictionary.
+
+
+(Constantly being updated with words and example sentences.)
+________________
+A
+
+
+“A” is the first letter of the alphabet and the first vowel.
+
+
+Adali (Modifier): “Easy (difficulty).”
         Ex: This is easy. -> Kino mai adali.
 Ahira (Modifier): “Hard (difficulty).”
 Aka (Modifier): “Red.”
