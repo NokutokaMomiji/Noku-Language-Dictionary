@@ -233,9 +233,10 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
             var currentWordData = words[n];
 
             if (currentWordData["word"].toLowerCase().startsWith(searchBar.value.toLowerCase())) {
+                var currentDefinition = currentWordData["definitions"][0];
                 var newSearchItem = document.createElement("li");
                 var newSearchLink = document.createElement("a");
-                newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>";
+                newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>  -> <span>\"" + currentDefinition + "\" (...)</span>";
                 newSearchLink.href = "word.html?letter=" + letters[i] + "&word=" + currentWordData["word"];
                 newSearchItem.appendChild(newSearchLink);
                 matchingNokuList.appendChild(newSearchItem);
