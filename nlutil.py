@@ -146,6 +146,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
 
     while index < content_length:
         line = content[index]
+        clog(SEPARATOR)
         clog(f"[JSON Parser]: Current index: {index}")
         clog(f"[JSON Parser]: Current line: \"{line}\".")
         clog(f"[JSON Parser]: Current line length: {len(line)}")
