@@ -30,13 +30,14 @@ with open(NEW_WORDS_PATH, "r", encoding="utf-8") as new_words:
         # I store new words in the following format: Definition -> Word
         # So we split using the " -> "
         line_data: list[str] = line.replace("\n", "").split(" -> ")
+        print(line_data)
 
         # Sometimes I have words I have not made the translation for. So we skip them and give a reminder
         #   that it still hasn't been added.
-        if len(line_data) < 2:
+        if len(line_data) < 2 or line_data[1] == "" or line_data[1] == " ":
             print(f"[ERROR]: Missing data in line {num}: {line_data}")
             continue
-        
+
         # Check if the word already exists. Maybe I add an extra definition, so...
         if line_data[1] not in new_word_data.keys():
             new_word_data[line_data[1]] = []
@@ -53,7 +54,7 @@ for word in new_word_data:
     # in parsing) is stored following the following hierarchy:
     #   Letter -> List of Words -> Individual Word Data.
     # So, I just grab the first letter of the word and use it as the letter key.
-    letter = word[0].upper()
+    letter = (word[1] if word[0] == "-" else word[0]).upper()
     letter_sect = word_data[letter]
     print(f"Letter: {letter}")
 
@@ -61,7 +62,7 @@ for word in new_word_data:
     # document. There is no need for it right now.
     # Also, I know that most verbs will start with "to" at the beginning.
     # So, I can add the verb thing and save a bit of typing.
-    letter_sect["words"].append({"word": word, "type": ("Verb" if word.lower().startswith("to") else "-"), "definitions": new_word_data[word], "examples": []})
+    letter_sect["words"].append({"word": word, "type": ("Verb" if word.lower().startswith("to") else ("Fix" if word[0] == "-" else "-")), "definitions": new_word_data[word], "examples": []})
 
 # Export data into txt file.
 # Using utf-8 for now. Damn you Python and the ANSI standard.

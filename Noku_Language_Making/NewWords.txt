@@ -1,24 +1,17 @@
-Success. -> Jayan
-Successful. -> Jayang
-Successfully. -> Jayan-Jayan
-Potato -> Potato
-Cake. -> Keki
-Idiot. -> Roka
-Idiotic. -> Rokang
-Idiotically. -> Roka-Roka
-Hospital. -> Nosoko
-Width. -> Lata
-Wide. -> Latang.
-Widely. -> Lata-Lata.
-Height. -> Tasa.
-High. (As an Adjective) -> Tasang.
-High. (As an adverb) -> Tasa-Tasa.
-Tall. -> Angakang.
-Depth. -> Dalama. 
-Deep. -> Dalamang.
-Largeness. -> Boya
-Large. -> Boyang
-Largely. -> Boya-Boya.
-A derogatory term. -> Enghina.
-Derogatory. -> Enghinang.
-Derogatorily. -> Enghina-Enghina.
+Page (as in a web page). -> Vekivu
+Page (as in the page of a book). -> Ivu
+To request. -> Rekuest
+A request. -> Rekuesta
+To click. -> Kuriku
+Option. -> Opushon
+To select. -> Erura
+Inter. -> Inte
+Net. -> Sihu
+Internet. -> Intesihu
+Thing that... -> -kua
+Person that... -> -rua
+Browser. -> Yalakua
+To browse. -> Yala
+To surf the web. -> Vekoro
+Web. -> Veko
+Or. -> Tai

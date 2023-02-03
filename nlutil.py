@@ -328,6 +328,8 @@ if __name__ == "__main__":
 
         clog("[ERROR]: Traceback exported.")
 
+    
+
     if exception_happened:
         if os.path.exists(DATA_NAME):
             clog("[Info]: Data file detected. Loading...")

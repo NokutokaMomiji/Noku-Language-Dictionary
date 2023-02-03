@@ -1,0 +1,82 @@
+Unsakui (): " Nothing.", "Nothing. "
+Unu (): " Purple."
+Unysa (): " Unpleasant.", "Unpleasant. "
+Unysafoni (): " Noise.", "Noise. "
+Uring (): " Night."
+[=================================================]
+|==========[START OF NEW]==========|
+Vambat (): "Slow. "
+Vara (): "Fast. "
+|==========[END]==========|
+Virea (): " Green."
+|==========[START OF NEW]==========|
+Voi (): "A log. "
+Voiti (Verb): "To log. "
+|==========[END]==========|
+Voka (): " Vocal.", "Vocal "
+Vokoni (): " Voice.", "Voice "
+[=================================================]
+Wahi (): " Cozy.", "Cozy. "
+|==========[START OF NEW]==========|
+Wake (Verb): "To upset. "
+Wala (Verb): "To lose. "
+Walaxala (Verb): "To forget. "
+Waru (Verb): "To touch. "
+Wat (): "Each. "
+|==========[END]==========|
+Wata (): " Water."
+Watsumu (): " Well (as in a well).", "Well (as in a well). "
+|==========[START OF NEW]==========|
+Westo (Verb): "To position. "
+[=================================================]
+|==========[END]==========|
+Xaku (): " Afraid", " Fear.", "Afraid "
+Xakura (): " To make (someone) afraid.", "To make someone afraid. "
+|==========[START OF NEW]==========|
+Xala (): "Memory. "
+|==========[END]==========|
+Xamo (): " As well.", " Also."
+Xan (): " To disgust", " Disgust.", "Disgust "
+|==========[START OF NEW]==========|
+Xania (): "Disgusting "
+|==========[END]==========|
+Xanra (): " To make (someone) disgusted.", "To make someone disgusted. "
+|==========[START OF NEW]==========|
+Xenu (): "Nerve. "
+Xenuang (): "Nervous. "
+|==========[END]==========|
+Xetang (): " Vertical. ", "Vertical. "
+Xetanganu (): " Verticality ", "Verticality "
+Xino (): " To scratch. ", "To scratch. "
+Xoru (): " Down ", "Down "
+Xotoku (): " To get.", " To receive.", "To get. "
+|==========[START OF NEW]==========|
+Xouka (): "Arm. "
+[=================================================]
+Ya (): "But. "
+|==========[END]==========|
+Yaki (): " To hug", " Hug."
+Yaku (): " About.", "About. "
+Yamama (): " Convenience.", "Convenience. "
+Yamo (): " May.", "May "
+|==========[START OF NEW]==========|
+Yanako (): "Cheek. "
+|==========[END]==========|
+Yatang (): " Horizontal.", "Horizontal. "
+Yatanganu (): " Horizontality.", "Horizontality "
+|==========[START OF NEW]==========|
+Yeong (Verb): "To play (as in to reproduce content.) "
+|==========[END]==========|
+Yodseu (): " Free (as in without cost).", "Free (as in without cost). "
+Yoksu (): " To study.", "To study. "
+Ysaru (): " To please", "Pleasure "
+Ysarung (): " Pleasure."
+|==========[START OF NEW]==========|
+Yuhe (): "Exception. "
+Yuhe-Yuhe (): "Exceptionally. "
+Yuheng (): "Exceptional. "
+Yukai (Verb): "To like."
+|==========[END]==========|
+Yung (Verb): " To thank.."
+|==========[START OF NEW]==========|
+Yusu (): "Face. "
