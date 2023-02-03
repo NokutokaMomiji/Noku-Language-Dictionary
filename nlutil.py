@@ -1,6 +1,19 @@
+"""
+    Noku Language Utilities (nlutil.py)
+    Nokutoka Momiji
+
+    This is a script for downloading and parsing the data from the Google Docs document into a JSON file for
+    the website. It also stores an extra metadata JSON file that, currently, includes the parsing timestamp and
+    the number of words in the dictionary.
+
+    I have no idea why anyone would use this, but I guess it can serve as an example for a parser.
+
+    Check the Google Docs dictionary at:
+        -> https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true
+"""
+
 import json
 import gdown
-import pypandoc
 import os
 import socket
 import traceback
@@ -9,11 +22,11 @@ import calendar
 
 log = []
 
-def clog(info: type):
+def clog(info: type) -> None:
     log.append(str(info) + "\n")
     print(str(info))
 
-def clog_export():
+def clog_export() -> None:
     with open("process.log", "w", encoding="utf-8") as log_file:
         log_file.writelines(log)
 
@@ -49,7 +62,7 @@ def array_remove_empty_lines(array: list) -> list:
         final_array.append(line) 
     return final_array
 
-def word_info_to_dict(info_line: str) -> dict:
+def word_info_to_dict(info_line: str) -> dict[str, list[str]]:
     # Words and their definitions are stored in the following format:
     #   Word (Type): "Definitions..."
     # So we split them by the colon.
@@ -115,6 +128,7 @@ def word_info_to_dict(info_line: str) -> dict:
     word_definitions.append(current_definition)
     clog(f"Current Definition: {current_definition}")
 
+    # Detect lack of word type and substitute with a dash.
     if word_type == "" or word_type == " ":
         word_type = "-"
 
@@ -141,8 +155,9 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
 
     clog(f"[JSON Parser]: There are {content_length} lines.")
 
+    # Metadata to display on Words page.
     metadata["num_of_words"] = 0
-    metadata["timestamp"] = calendar.timegm(time.gmtime()) #time.time() #datetime.timestamp(datetime.now())
+    metadata["timestamp"] = calendar.timegm(time.gmtime()) # Can't wait for Y2K38
 
     while index < content_length:
         line = content[index]
@@ -152,6 +167,8 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
         clog(f"[JSON Parser]: Current line length: {len(line)}")
         clog("[JSON Parser]: Is letter: " + str(line in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
         # A work around. I really should figure out why this happens.
+        # UPDATE: Probably not needed anymore since I don't use pandoc anymore. But taking in consideration that 
+        # the script is working fine with it, I'll leave it for now. Just in case.
         if line == "consonant.":
             data_dict[current_letter]["description"] += " " + line
             continue
@@ -161,6 +178,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
             clog("[JSON Parser]: Line is separator.")
             current_letter = line
             clog(f"[JSON Parser]: New letter '{current_letter}'")
+            # Check if we can proceed in order to avoid getting out of bounds.
             if not can_advance_index(index, content_length):
                 break
             index += 1
@@ -178,7 +196,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
             continue
 
         # Examples are automatically extracted after finding the definition for a word. 
-        # So, if we find ourselves at an example, it is orphan and an error.
+        # So, if we find ourselves at an example, it is an orphan and an error.
         # So, we report it.
         if line[:2].lower() == "ex" and current_letter != "":
             clog(f"[ERROR]: Orphan example \"{line}\".")
@@ -187,15 +205,20 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
         elif line[:2].lower() == "ex" and current_letter == "":
             continue
 
+        # Extract word info and update metadata.
         word_info = word_info_to_dict(line)
         metadata["num_of_words"] += 1
         word_info["examples"] = []
+
+        # Again, check if we can advance the index.
         if not can_advance_index(index, content_length):
             break
+
         index += 1
         line = content[index]
         line_length = len(line)
 
+        # Extract examples.
         while line[:3].lower() == "ex:":
             in_english = True
             skip_spaces = True
@@ -245,6 +268,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
         clog(f"Removing line.")
         index -= 1
 
+        # Finally, after all the shit from before, we add the full data to the dictionary.
         data_dict[current_letter]["words"].append(word_info)
         if not can_advance_index(index, content_length):
             break
@@ -253,13 +277,16 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
     try:
         os.remove("src/noku_language_words.txt")
     except:
-        clog("Failed to remove txt file.")
+        clog("[ERROR]: Failed to remove txt file.")
 
     clog("CONVERSION FINISHED!")
     return data_dict
   
-
+# Dunno why you would, but you could import the script as a module on some other thing.
+# Just in case, I execute stuff only if we are main.
 if __name__ == "__main__":
+    os.system("cls" if os.name == "nt" else "clear")    # Ternary operators FTW.
+
     clog("======[Noku Language]======")
     clog(" · For official document, check the following link: ")
     clog("   -> https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true")
@@ -268,18 +295,21 @@ if __name__ == "__main__":
     create_nonexistent_directory("docs")
     create_nonexistent_directory("docs/data")
 
-    URL = "https://drive.google.com/uc?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
+    URL: str = "https://drive.google.com/uc?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
     
-    URL = "https://docs.google.com/document/u/0/export?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&token=AC4w5Vjof-bYw24DXGihuEPY71rZLN781g%3A1670151312967&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A59%2C%22lplc%22%3A19%7D"
+    URL: str = "https://docs.google.com/document/u/0/export?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&token=AC4w5Vjof-bYw24DXGihuEPY71rZLN781g%3A1670151312967&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A59%2C%22lplc%22%3A19%7D"
 
-    OUTPUT_NAME = "src/noku_language_words.txt"
-    DATA_NAME = "docs/data/data.json"
-    METADATA_NAME = "docs/data/metadata.json"
-    BACKUP_NAME = "src/backup.txt"
+    OUTPUT_NAME: str = "src/noku_language_words.txt"
+    DATA_NAME: str = "docs/data/data.json"
+    METADATA_NAME: str = "docs/data/metadata.json"
+    BACKUP_NAME: str = "src/backup.txt"
 
-    exported_data = {}
-    metadata = {}
-    exception_happened = False
+    exported_data: dict = {}
+    metadata: dict = {}
+    exception_happened: bool = False
+
+    # Using GDown to download the text file. I managed to extract the link for txt export using developer tools.
+    # Much better solution than using pandoc, really.
     try:
         clog("[Info]: Downloading online dictionary.")
         gdown.download(URL, OUTPUT_NAME, quiet=False)
