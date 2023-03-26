@@ -265,6 +265,10 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
     }
 
     var matchedEnglish = false;
+    var matchedStart = [];
+    var matchedRegex = [];
+    var matchedStartDef = [];
+    var matchedRegexDef = [];
 
     for (var i = 0; i < letters.length; i++) {
         var words = dictionaryData[letters[i]]["words"];
@@ -273,20 +277,39 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
 
             for (var j = 0; j < currentWordData["definitions"].length; j++) {
                 var currentDefinition = currentWordData["definitions"][j];
-
-                if (new RegExp("\\b" + searchBar.value.toLowerCase() + "\\b").test(currentDefinition.toLowerCase()) || currentDefinition.toLowerCase().startsWith(searchBar.value.toLowerCase())) {
+                if (currentDefinition.toLowerCase().startsWith(searchBar.value.toLowerCase())) {
                     console.log("Match: " + currentDefinition);
-                    var newSearchItem = document.createElement("li");
-                    var newSearchLink = document.createElement("a");
-                    newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>  -> <span>\"" + currentDefinition + "\"</span>";
-                    newSearchLink.href = "word.html?letter=" + letters[i] + "&word=" + currentWordData["word"];
-                    newSearchItem.appendChild(newSearchLink);
-                    matchingEnglishList.appendChild(newSearchItem);
+                    matchedStart.push(currentWordData);
+                    matchedStartDef.push(currentDefinition);
+                    matchedEnglish = true;
+                    continue;
+                }
 
+                if (new RegExp("\\b" + searchBar.value.toLowerCase() + "\\b").test(currentDefinition.toLowerCase())) {
+                    console.log("Match: " + currentDefinition);
+                    matchedRegex.push(currentWordData);
+                    matchedRegexDef.push(currentDefinition);
                     matchedEnglish = true;
                 }
             }
         }
+    }
+
+    var totalLength = matchedStart.length + matchedRegex.length;
+    console.log("Total Length: " + totalLength);
+    for (var i = 0; i < totalLength; i++) {
+        var n = i - matchedStart.length;
+        var currentWordData = (n < 0) ? matchedStart[i] : matchedRegex[n];
+        var currentDefinition = (n < 0) ? matchedStartDef[i] : matchedRegexDef[n];
+        var letter = currentWordData["word"].toUpperCase().slice(0, 1);
+        letter = (letter == "-") ? currentWordData["word"].toUpperCase().slice(1, 2) : letter;
+
+        var newSearchItem = document.createElement("li");
+        var newSearchLink = document.createElement("a");
+        newSearchLink.innerHTML = currentWordData["word"] + " <span>(" + currentWordData["type"] + ")</span>  -> <span>\"" + currentDefinition + "\"</span>";
+        newSearchLink.href = "word.html?letter=" + letter + "&word=" + currentWordData["word"];
+        newSearchItem.appendChild(newSearchLink);
+        matchingEnglishList.appendChild(newSearchItem);
     }
 
     if (!matchedEnglish) {
