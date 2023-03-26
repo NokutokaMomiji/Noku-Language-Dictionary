@@ -226,7 +226,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
             subindex = 4
 
             while subindex < line_length:
-                clog("Skip spaces: " + str(skip_spaces))
+                #clog("Skip spaces: " + str(skip_spaces))
                 char = line[subindex]
                 next_char = ""
                 if can_advance_index(subindex, line_length):

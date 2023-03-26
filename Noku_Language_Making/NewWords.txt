@@ -1,17 +1,44 @@
-Page (as in a web page). -> Vekivu
-Page (as in the page of a book). -> Ivu
-To request. -> Rekuest
-A request. -> Rekuesta
-To click. -> Kuriku
-Option. -> Opushon
-To select. -> Erura
-Inter. -> Inte
-Net. -> Sihu
-Internet. -> Intesihu
-Thing that... -> -kua
-Person that... -> -rua
-Browser. -> Yalakua
-To browse. -> Yala
-To surf the web. -> Vekoro
-Web. -> Veko
-Or. -> Tai
+Part. -> Tundu
+To be able to. -> Maikanu
+To be capable of. -> Mikanu
+Capable. -> Mikanung
+Capability. -> Mikanua
+Capably. -> Mikanu-mikanu
+To walk. -> Osetka
+To run. -> Vasetka
+To jog. -> Lembutka
+Gentle. -> Lembu
+Admire. -> 
+Codification. -> 
+Decodification. -> 
+Note (As in a musical note). -> 
+Note (As in a note). -> 
+To note down. -> 
+To denote. -> 
+To devote. ->
+Devotion. -> 
+To rape. -> 
+Deity. -> 
+God. -> 
+Property (as in something that belongs to someone). -> 
+Property (as in an inherent quality of something). -> 
+Elastic. -> 
+Elastically. -> 
+Coeficient. -> 
+Group. -> 
+To match. -> 
+Rectum. -> 
+Straight. -> 
+Electroencefalografy -> 
+Puppet. -> 
+Calibre. -> 
+Photographer. -> 
+Photography (as in the art). -> 
+Photography (as in a photo). -> 
+Anarchy. -> 
+Paradox. -> 
+Knife fight to the death. -> Tatatae
+Knife. -> Tata
+Death. -> Tae
+Sword. -> Nake
+Dagger. -> Nakiti

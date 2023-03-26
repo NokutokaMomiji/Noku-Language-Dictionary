@@ -129,7 +129,16 @@ function setWordPage() {
             wordTitle.textContent = word;
             wordType.textContent = wordData["type"];
             if (wordData["type"].includes("Verb")) {
-                possibleVerbForms.innerHTML = "Past: <span>" + word + ((word.endsWith("a")) ? "non" : "anon") + "</span> | Future: <span>" + word + "rian" + "</span> | Imperative: <span>" + word.slice(0, 2) + word.toLowerCase() + "</span>"
+                var possibleImperative = word.slice(0, 2);
+                var theCheck = (!possibleImperative.includes("a") && !possibleImperative.includes("e") && 
+                                !possibleImperative.includes("i") && !possibleImperative.includes("o") && 
+                                !possibleImperative.includes("u"));
+                if (theCheck)
+                    possibleImperative = word.slice(0, 3) + word.slice(1, word.length);
+                else
+                    possibleImperative += word.toLowerCase();
+                console.log(theCheck);
+                possibleVerbForms.innerHTML = "Past: <span>" + word + ((word.endsWith("a")) ? "non" : "anon") + "</span> | Future: <span>" + word + "rian" + "</span> | Imperative: <span>" + possibleImperative + "</span>"
             }
             for (var n = 0; n < wordData["definitions"].length; n++) {
                 var newDefinition = document.createElement("li");
