@@ -8,7 +8,11 @@ To walk. -> Osetka
 To run. -> Vasetka
 To jog. -> Lembutka
 Gentle. -> Lembu
-Admire. -> 
+To admire. -> Gumi.
+Admiration. -> Guming.
+Admirable. -> Layagumi.
+Admirably. -> Gumi-gumi.
+To deserve. -> Layaka.
 Codification. -> 
 Decodification. -> 
 Note (As in a musical note). -> 
@@ -22,23 +26,42 @@ Deity. ->
 God. -> 
 Property (as in something that belongs to someone). -> 
 Property (as in an inherent quality of something). -> 
-Elastic. -> 
-Elastically. -> 
-Coeficient. -> 
-Group. -> 
-To match. -> 
-Rectum. -> 
-Straight. -> 
-Electroencefalografy -> 
-Puppet. -> 
-Calibre. -> 
-Photographer. -> 
-Photography (as in the art). -> 
-Photography (as in a photo). -> 
-Anarchy. -> 
-Paradox. -> 
+Elastic. -> Jajo.
+Elastical. -> Jajong.
+Elastically. -> Jajo-jajo.
+Coeficient. -> Pekali.
+To group. -> Pula.
+A group. -> Pulang.
+To match. -> Janka.
+Rectum. -> Prokto.
+Straight. -> Tieisang
+To straighten. -> Tieisa.
+-graphy. -> fiku.
+Electricity. -> Ektra.
+Electrical. -> Ektrang.
+Electrically. -> Ektra-ektra.
+Encephalo. -> Dalatonole.
+Electroencephalography. -> Ektradalatonolefiku.
+Gram. -> Reko.
+Electrogram. -> Ektrareko.
+Puppet. -> Boneka.
+Calibre. -> Trima.
+Photographer. -> Otrafikurua.
+To photograph. -> Otrafiku.
+Photography (as in the art). -> Otrafikua.
+Photography (as in a photo). -> Otrafikuang.
+Anarchy. -> Anarkia.
+Anarchist. -> Anarkiarua.
+Contradiction. -> Tifa.
+Contradictory. -> Tifang.
+Contradictorily. -> Tifa-tifa.
+Paradox. -> Suitifa.
 Knife fight to the death. -> Tatatae
 Knife. -> Tata
 Death. -> Tae
 Sword. -> Nake
 Dagger. -> Nakiti
+Self. -> Sui.
+Dick. -> 
+To walk into a room or zone only to exit it immediately. -> Dalu
+Jussara -> Jusara
