@@ -130,9 +130,11 @@ function setWordPage() {
             wordType.textContent = wordData["type"];
             if (wordData["type"].includes("Verb")) {
                 var possibleImperative = word.slice(0, 2);
-                var theCheck = (!possibleImperative.includes("a") && !possibleImperative.includes("e") && 
-                                !possibleImperative.includes("i") && !possibleImperative.includes("o") && 
-                                !possibleImperative.includes("u"));
+                console.log("Possible imperative: " + possibleImperative);
+                var pILower = possibleImperative.toLowerCase();
+                var theCheck = (!pILower.includes("a") && !pILower.includes("e") && 
+                                !pILower.includes("i") && !pILower.includes("o") && 
+                                !pILower.includes("u"));
                 if (theCheck)
                     possibleImperative = word.slice(0, 3) + word.slice(1, word.length);
                 else
