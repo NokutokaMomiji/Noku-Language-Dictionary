@@ -1,4 +1,4 @@
-Part. -> Tundu
+﻿Part. -> Tundu
 To be able to. -> Maikanu
 To be capable of. -> Mikanu
 Capable. -> Mikanung
@@ -8,60 +8,118 @@ To walk. -> Osetka
 To run. -> Vasetka
 To jog. -> Lembutka
 Gentle. -> Lembu
-To admire. -> Gumi.
-Admiration. -> Guming.
-Admirable. -> Layagumi.
-Admirably. -> Gumi-gumi.
-To deserve. -> Layaka.
-Codification. -> 
-Decodification. -> 
-Note (As in a musical note). -> 
-Note (As in a note). -> 
-To note down. -> 
-To denote. -> 
-To devote. ->
-Devotion. -> 
-To rape. -> 
-Deity. -> 
-God. -> 
-Property (as in something that belongs to someone). -> 
+To admire. -> Gumi
+Admiration. -> Guming
+Admirable. -> Layagumi
+Admirably. -> Gumi-gumi
+To deserve. -> Layaka
+To code. -> Gusuru
+A code. -> Kodo
+To encode. -> Kosuru
+To decode. -> Dosuru
+Encoded. -> Kosuruanon
+Encoded. -> Dosuruanon
+Codification. -> Kosurung
+Decodification. -> Dosurung
+Note (As in a musical note). -> Musenei
+Note (As in a note). -> Seneika
+To note down. -> Senexoru
+To denote. -> Disei
+Denotation. -> Diseing
+To devote. -> Ero
+Devotion. -> Erong
+Devotedly. -> Ero-ero
+To dress yourself up. -> Nayitosui
+To dress (something / someone). -> Nayito. 
+A dress. -> Bakai
+A skirt. -> Skirta
+A shirt. -> Mikro
+Formal. -> Tei
+Formally. -> Tei-tei
+Formality. -> Teing
+To formalize. -> Teiguma
+Informal. -> Untei
+Informally. -> Untei-tei
+Informality. -> Unteing
+To informalize. -> Unteiguma
+A t-shirt. -> Unteikro
+To wear. -> Kiru
+Clothing. -> Kirung
+Clothes. -> Kirungs
+To wear underneath. -> Divikiru
+Underwear. -> Divikirung
+A breast. -> Isia
+A boob. ->  Isia
+Breasts. -> Isias
+Boobs. -> Isias
+To joke. -> Joku
+A joke. -> Jokuang
+Jokingly. -> Joku-joku
+Joking. -> Jokung
+To kill. -> Koto
+To meditate. -> Epto
+Mediation. -> Eptong
+To premeditate. -> Anepto
+Premeditation. -> Aneptong
+To murder. -> Anepkoto
+Condemned. -> Tadi
+To execute (as in to execute someone). -> Kototadi
+To execute (as in to run). -> Ekte
+To terminate. -> Mutu
+Termination. -> Mutung
+Terminal (as in a terminal disease). -> Mutukua
+Terminal (as in an airplane terminal). -> Usak.
+A costume. -> Natu
+To cosplay. -> Natuixo.
+A cosplay. -> Natuixo.
+To rape. -> Rapere.
+Deity. -> Deitas.
+God. -> Deu
+Property (as in something that belongs to someone). -> Sivoivo.
 Property (as in an inherent quality of something). -> 
-Elastic. -> Jajo.
-Elastical. -> Jajong.
-Elastically. -> Jajo-jajo.
-Coeficient. -> Pekali.
-To group. -> Pula.
-A group. -> Pulang.
-To match. -> Janka.
-Rectum. -> Prokto.
+Elastic. -> Jajo
+Elastical. -> Jajong
+Elastically. -> Jajo-jajo
+Elasticity. ->  Jajokanu
+To commit a crime. -> 
+A crime. -> 
+Ability to commit a crime. -> 
+Ability to... -> -kanu
+Able to... -> -kanu
+Coeficient. -> Pekali
+To group. -> Pula
+A group. -> Pulang
+To match. -> Janka
+Rectum. -> Prokto
 Straight. -> Tieisang
-To straighten. -> Tieisa.
--graphy. -> fiku.
-Electricity. -> Ektra.
-Electrical. -> Ektrang.
-Electrically. -> Ektra-ektra.
-Encephalo. -> Dalatonole.
-Electroencephalography. -> Ektradalatonolefiku.
-Gram. -> Reko.
-Electrogram. -> Ektrareko.
-Puppet. -> Boneka.
-Calibre. -> Trima.
-Photographer. -> Otrafikurua.
-To photograph. -> Otrafiku.
-Photography (as in the art). -> Otrafikua.
-Photography (as in a photo). -> Otrafikuang.
-Anarchy. -> Anarkia.
-Anarchist. -> Anarkiarua.
-Contradiction. -> Tifa.
-Contradictory. -> Tifang.
-Contradictorily. -> Tifa-tifa.
-Paradox. -> Suitifa.
+To straighten. -> Tieisa
+-graphy. -> fiku
+Electricity. -> Ektra
+Electrical. -> Ektrang
+Electrically. -> Ektra-ektra
+Encephalo. -> Dalatonole
+Electroencephalography. -> Ektradalatonolefiku
+Gram. -> Reko
+Electrogram. -> Ektrareko
+Puppet. -> Boneka
+Calibre. -> Trima
+Photographer. -> Otrafikurua
+To photograph. -> Otrafiku
+Photography (as in the art). -> Otrafikua
+Photography (as in a photo). -> Otrafikuang
+Anarchy. -> Anarkia
+Anarchist. -> Anarkiarua
+Contradiction. -> Tifa
+Contradictory. -> Tifang
+Contradictorily. -> Tifa-tifa
+Paradox. -> Suitifa
 Knife fight to the death. -> Tatatae
 Knife. -> Tata
 Death. -> Tae
 Sword. -> Nake
 Dagger. -> Nakiti
-Self. -> Sui.
+Self. -> Sui
+Refering to oneself. -> -sui
 Dick. -> 
 To walk into a room or zone only to exit it immediately. -> Dalu
-Jussara -> Jusara
+To kill oneself. -> 

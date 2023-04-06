@@ -82,7 +82,9 @@ function setWordList() {
         wordCounter.innerText = "There are currently " + Metadata["num_of_words"] + " words in the Noku Dictionary."
         console.log("Metadata timestamp: " + String(Metadata["timestamp"]))
         var date = new Date(Metadata["timestamp"] * 1000);
-        lastUpdate.innerText = "Last updated on " + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+        var actualMonth = date.getMonth() + 1;
+        var actualDate = date.getDate();
+        lastUpdate.innerText = "Last updated on " + date.getFullYear() + "/" + (actualMonth < 10 ? "0" + actualMonth : actualMonth) + "/" + (actualDate < 10 ? "0" + actualDate : actualDate);
     }
 
     document.title = "Noku Language - " + letter;

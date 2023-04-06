@@ -295,9 +295,9 @@ if __name__ == "__main__":
     create_nonexistent_directory("docs")
     create_nonexistent_directory("docs/data")
 
-    URL: str = "https://drive.google.com/uc?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
+    #URL: str = "https://drive.google.com/uc?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx"
     
-    URL: str = "https://docs.google.com/document/u/0/export?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&token=AC4w5Vjof-bYw24DXGihuEPY71rZLN781g%3A1670151312967&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A59%2C%22lplc%22%3A19%7D"
+    URL: str = "https://docs.google.com/document/export?format=txt&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A61%2C%22lplc%22%3A5%7D"
 
     OUTPUT_NAME: str = "src/noku_language_words.txt"
     DATA_NAME: str = "docs/data/data.json"

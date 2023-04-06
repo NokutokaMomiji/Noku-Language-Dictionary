@@ -155,3 +155,6 @@ cython_debug/
 noku_markdown.md
 traceback.txt
 process.log
+
+/node_modules
+noku-language/node_modules/

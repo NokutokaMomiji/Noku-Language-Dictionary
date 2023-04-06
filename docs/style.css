@@ -53,6 +53,19 @@ p {
     line-height: 1.5;
 }
 
+a {
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border-radius: 4px;
+    padding: 2px;
+}
+
 ion-icon {
     color: inherit;
     z-index: inherit;
@@ -667,6 +680,11 @@ table {
     .content-block {
         padding-left: calc(10px + (100vw - 200px) * (15 - 30) / (200 -  1000));
         padding-right: calc(10px + (100vw - 200px) * (15 - 30) / (200 -  1000));
+    }
+
+    #bottom-container a {
+        font-size: 21px;
+
     }
 }; 
 
