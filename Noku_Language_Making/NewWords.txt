@@ -49,7 +49,7 @@ Clothes. -> Kirungs
 To wear underneath. -> Divikiru
 Underwear. -> Divikirung
 A breast. -> Isia
-A boob. ->  Isia
+A boob. -> Isia
 Breasts. -> Isias
 Boobs. -> Isias
 To joke. -> Joku
@@ -68,24 +68,25 @@ To execute (as in to run). -> Ekte
 To terminate. -> Mutu
 Termination. -> Mutung
 Terminal (as in a terminal disease). -> Mutukua
-Terminal (as in an airplane terminal). -> Usak.
+Terminal (as in an airplane terminal). -> Usak
 A costume. -> Natu
-To cosplay. -> Natuixo.
-A cosplay. -> Natuixo.
-To rape. -> Rapere.
-Deity. -> Deitas.
+To cosplay. -> Natuixo
+A cosplay. -> Natuixo
+To rape. -> Rapere
+Deity. -> Deitas
 God. -> Deu
-Property (as in something that belongs to someone). -> Sivoivo.
-Property (as in an inherent quality of something). -> 
+Property (as in something that belongs to someone). -> Sivoivo
+Property (as in an inherent quality of something). -> Xusuya
 Elastic. -> Jajo
 Elastical. -> Jajong
 Elastically. -> Jajo-jajo
-Elasticity. ->  Jajokanu
-To commit a crime. -> 
-A crime. -> 
-Ability to commit a crime. -> 
+Elasticity. -> Jajokanu
+To commit a crime. -> Lakaserno
+A crime. -> Serno
+Ability to commit a crime. -> Lakasernokanu
 Ability to... -> -kanu
 Able to... -> -kanu
+Capacity to do... -> -kanu
 Coeficient. -> Pekali
 To group. -> Pula
 A group. -> Pulang
@@ -120,6 +121,8 @@ Sword. -> Nake
 Dagger. -> Nakiti
 Self. -> Sui
 Refering to oneself. -> -sui
-Dick. -> 
+Dick. -> Peo
 To walk into a room or zone only to exit it immediately. -> Dalu
-To kill oneself. -> 
+To kill oneself. -> Kotosui
+To commit suicide. -> Kotosui
+To bully. -> Pol.

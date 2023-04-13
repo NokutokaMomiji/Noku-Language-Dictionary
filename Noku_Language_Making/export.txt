@@ -18,8 +18,11 @@ Ampaknya (Verb): "To look. (as in how you look.)"
 An- (Fix): "Before."
 Anaran (Modifier / Noun): "Morning"
 [============[START OF NEW]============]
-Anarkia. (-): "Anarchy."
-Anarkiarua. (-): "Anarchist."
+Anarkia (-): "Anarchy."
+Anarkiarua (-): "Anarchist."
+Anepkoto (Verb): "To murder."
+Anepto (Verb): "To premeditate."
+Aneptong (-): "Premeditation."
 [=============[END OF NEW]=============]
 Ang (Preposition): "A"
 Angakang (Adjective): "Tall."
@@ -28,7 +31,7 @@ Anging (Verb / Noun): "To anger.", "Anger."
 Ankari (Verb): "To find."
 Ankinoni (-): "Before (the present time)."
 Anoni (Preposition): "Before (some time)."
-Anpriaran (Modifier): "Thedaybeforeyesterday."
+Anpriaran (Modifier): "The day before yesterday."
 Anuring (Modifier): "Evening."
 Anya (-): "Just (as in this is just too much)."
 Apo (Question Word): "What?"
@@ -59,6 +62,9 @@ Bagang (-): "Messy."
 Bagi (Verb): "To share."
 Bahi (-): "Language."
 Baika (Modifier): "Good."
+[============[START OF NEW]============]
+Bakai (-): "A dress."
+[=============[END OF NEW]=============]
 Bana (Modifier): "A lot.", "So.", "Very.", "Such a."
 Bangala (Modifier): "Frozen."
 Bangaloru (Verb): "To freeze."
@@ -79,7 +85,7 @@ Blou (Modifier): "Top."
 Bloudeska (Noun): "Desktop."
 Bloukefa (Noun): "Forehead."
 [============[START OF NEW]============]
-Boneka. (-): "Puppet."
+Boneka (-): "Puppet."
 [=============[END OF NEW]=============]
 Boran (Modifier): "Heavy. "
 Bore (Verb): "To can.", "Can."
@@ -101,24 +107,44 @@ Dalama (Noun): "Depth."
 Dalamang (Adjective): "Deep."
 Dalato (Modifier): "Inside."
 [============[START OF NEW]============]
-Dalatonole. (-): "Encephalo."
-Dalu (-): "To walk into a room or zone only to exit it immediately."
+Dalatonole (-): "Encephalo."
+Dalu (Verb): "To walk into a room or zone only to exit it immediately."
+Dalu (Verb): "To walk into a room or zone only to exit it immediately."
 [=============[END OF NEW]=============]
 Dapi (Verb): "To face."
 Dara (Verb): "To give.", "Give."
 Dei- (Fix): "Next."
 Deiaran (Modifier / Noun): "Tomorrow."
 Deiluna (Modifier / Noun): "Next month."
+[============[START OF NEW]============]
+Deitas (-): "Deity."
+[=============[END OF NEW]=============]
 Deiuring (Modifier / Noun): "Next night."
 Deri (Verb): "To suffer.", "Suffer."
 Dering (Noun): "Suffering"
 Deska (Noun): "Table.", "Desk."
 Desu (Verb / Question Word): "To may.", "May"
+[============[START OF NEW]============]
+Deus (-): "God."
+[=============[END OF NEW]=============]
 Deve (Verb): "Keep (going).", "To continue", "Continue"
 Dienluna (Noun): "October."
 Dimis (Noun): "Release (as in the release of a new film book etc)."
+[============[START OF NEW]============]
+Disei (Verb): "To denote."
+Diseing (-): "Denotation."
+[=============[END OF NEW]=============]
 Divi (-): "Under."
+[============[START OF NEW]============]
+Divikiru (Verb): "To wear underneath."
+Divikirung (-): "Underwear."
+[=============[END OF NEW]=============]
 Dora (Modifier): "Handsome."
+[============[START OF NEW]============]
+Dosuru (Verb): "To decode."
+Dosuruanon (-): "Encoded."
+Dosurung (-): "Decodification."
+[=============[END OF NEW]=============]
 Dutu (Noun): "Angle."
 [============================================]
 Ebete (Modifier): "All."
@@ -134,11 +160,12 @@ Ekang (Adjective): "Stressful."
 Ekera (Modifier / Noun): "Saturday."
 Ekrin (Noun): "Screen."
 [============[START OF NEW]============]
-Ektra-ektra. (-): "Electrically."
-Ektra. (-): "Electricity."
-Ektradalatonolefiku. (-): "Electroencephalography."
-Ektrang. (-): "Electrical."
-Ektrareko. (-): "Electrogram."
+Ekte (Verb): "To execute (as in to run)."
+Ektra (-): "Electricity."
+Ektra-ektra (-): "Electrically."
+Ektradalatonolefiku (-): "Electroencephalography."
+Ektrang (-): "Electrical."
+Ektrareko (-): "Electrogram."
 [=============[END OF NEW]=============]
 Empati (Verb): "To occupy.", "Occupy."
 Enang (Verb): "To calm.", "Calm."
@@ -150,7 +177,16 @@ Enso (Noun): "Heart."
 Ensobito (Noun): "Heartbeat."
 Entiku (-): "Identical.", "Same."
 Entuatu (-): "Square."
+[============[START OF NEW]============]
+Epto (Verb): "To meditate."
+Eptong (-): "Mediation."
+[=============[END OF NEW]=============]
 Erenka (Verb): "To plan."
+[============[START OF NEW]============]
+Ero (Verb): "To devote."
+Ero-ero (-): "Devotedly."
+Erong (-): "Devotion."
+[=============[END OF NEW]=============]
 Ersea (-): "Available."
 Erseakanu (-): "Availability."
 Erua (Verb): "To fast (as in to not eat)."
@@ -164,7 +200,7 @@ Faltang (Adjective): "Lacking."
 Fang (Noun): "Way."
 Fiera (Verb): "To happen.", "Happen."
 [============[START OF NEW]============]
-fiku. (-): "-graphy."
+-fiku (-): "-graphy."
 [=============[END OF NEW]=============]
 Flaun (Modifier): "Yellow."
 Foni (Noun): "Sound."
@@ -183,9 +219,10 @@ Gilen (Noun): "Female dog."
 Golen (Noun): "Male dog."
 Guma (Verb): "To make (as in to make someone...)."
 [============[START OF NEW]============]
-Gumi-gumi. (-): "Admirably."
-Gumi. (-): "To admire."
-Guming. (-): "Admiration."
+Gumi (Verb): "To admire."
+Gumi-gumi (-): "Admirably."
+Guming (-): "Admiration."
+Gusuru (Verb): "To code."
 [============================================]
 Habang (-): "While (as in "while we wait.")."
 Hakiti (Noun): "Child."
@@ -227,6 +264,7 @@ Ide (Noun): "Idea."
 Ihagi (Verb): "To throw.", "Throw."
 Ikanu (Noun): "Ability."
 Ikao (Verb): "To leave (as in to allow to remain)."
+Ikeru (Verb): "To hope.", "Hope"
 Ikro (Modifier): "Small."
 Ileri-Ileri (Adverb): "Forth."
 Imaniti (Noun): "Person", "Human."
@@ -245,6 +283,10 @@ Irata (Verb): "To busy.", "Busy."
 Iratang (Adjective): "Busy."
 Irka (Noun): "Width."
 Irkang (Adjective): "Wide."
+[============[START OF NEW]============]
+Isia (-): "A breast.", "A boob."
+Isias (-): "Breasts.", "Boobs."
+[=============[END OF NEW]=============]
 Ita (Exclamation): "Yes."
 Iteba (-): "From."
 Iti (-): "Small."
@@ -254,9 +296,10 @@ Ixe (Verb): "To suck (something)."
 Iyi (-): "Best."
 [============================================]
 [============[START OF NEW]============]
-Jajo-jajo. (-): "Elastically."
-Jajo. (-): "Elastic."
-Jajong. (-): "Elastical."
+Jajo (-): "Elastic."
+Jajo-jajo (-): "Elastically."
+Jajokanu (-): "Elasticity."
+Jajong (-): "Elastical."
 [=============[END OF NEW]=============]
 Jakroni (Noun): "End (as in the end of a period of time.)"
 Jaku (Verb): "To end.", "End."
@@ -265,7 +308,7 @@ Jalu (Noun): "Path. "
 Jalufang (Noun): "Pathway. "
 Jani (Adjective): "Innocent."
 [============[START OF NEW]============]
-Janka. (-): "To match."
+Janka (Verb): "To match."
 [=============[END OF NEW]=============]
 Jatan (Modifier): "Sweet."
 Jayan (Noun): "Success."
@@ -276,14 +319,21 @@ Jisu (Verb): "To hold.", "Hold."
 Jitei (Verb): "To pause.", "Pause."
 Joji (Adjective): "Physical. "
 Joji-joji (Adverb): "Physically."
+[============[START OF NEW]============]
+Joku (Verb): "To joke."
+Joku-joku (-): "Jokingly."
+Jokuang (-): "A joke."
+Jokung (-): "Joking."
+[=============[END OF NEW]=============]
 Juni (Preposition): "By."
 Juru (Adjective): "Honest."
 Juru-juru (Adverb): "Honestly."
 Jurung (Noun): "Honesty."
-[============[START OF NEW]============]
-Jusara (-): "Jussara"
 [============================================]
 -kai (Suffix): "Like. (in likeness to something)."
+[============[START OF NEW]============]
+-kanu (Fix): "Ability to...", "Able to...", "Capacity to do..."
+[=============[END OF NEW]=============]
 -kua (Suffix): "Thing that..."
 Kadere (Verb): "To fall (in a state).", "To fall (as in "I fell over")."
 Kadomno (Verb): "To fall asleep."
@@ -327,7 +377,15 @@ Kinluna (Modifier / Noun): "This month."
 Kino (Determiner): "This."
 Kinoni (Modifier / Noun): "Now.", "Present (time)."
 Kinuring (Modifier / Noun): "Tonight."
+[============[START OF NEW]============]
+Kiru (Verb): "To wear."
+Kirung (-): "Clothing."
+Kirungs (-): "Clothes."
+[=============[END OF NEW]=============]
 Kisulu (Verb): "To draw.", "Draw."
+[============[START OF NEW]============]
+Kodo (-): "A code."
+[=============[END OF NEW]=============]
 Kola (-): "For."
 Koloru (Noun): "Color."
 Konlikido (Verb): "To drink", "Drink."
@@ -339,6 +397,14 @@ Konto-konto (Adverb): "Chaotically."
 Kontong (Adjective): "Chaotic."
 Kontro (Verb): "To control.", "Control."
 Kosu (Verb / Noun): "To cause.", "Cause.", "A cause."
+[============[START OF NEW]============]
+Kosuru (Verb): "To encode."
+Kosuruanon (-): "Encoded."
+Kosurung (-): "Codification."
+Koto (Verb): "To kill."
+Kotosui (Verb): "To kill oneself.", "To commit suicide."
+Kototadi (Verb): "To execute (as in to execute someone)."
+[=============[END OF NEW]=============]
 Kroni (Noun): "Time."
 Kroni-kroni (Adverb): "Timely."
 Kuamera (Modifier / Noun): "Thursday."
@@ -358,6 +424,10 @@ Kyusu (Verb): "To mention.", "Mention."
 [============================================]
 Laino (-): "Other."
 Lakan (Verb): "To do."
+[============[START OF NEW]============]
+Lakaserno (Verb): "To commit a crime."
+Lakasernokanu (-): "Ability to commit a crime."
+[=============[END OF NEW]=============]
 Laki (Noun): "Male"
 Lakibu (Noun): "Dad"
 Lakibuma (Noun): "Father"
@@ -368,15 +438,15 @@ Latan (Noun): "Circle."
 Latang. (Adverb): "Circular."
 Lato (Noun): "Side."
 [============[START OF NEW]============]
-Layagumi. (-): "Admirable."
-Layaka. (-): "To deserve."
+Layagumi (-): "Admirable."
+Layaka (Verb): "To deserve."
 Lembu (Adjective): "Gentle."
 Lembu (-): "Gentle."
 [=============[END OF NEW]=============]
 Lembu-Lembu (Adverb): "Gently."
 [============[START OF NEW]============]
 Lembutka (Verb): "To jog.", "Jog."
-Lembutka (-): "To jog."
+Lembutka (Verb): "To jog."
 [=============[END OF NEW]=============]
 Levi (-): "Over."
 Levirija (Verb): "To Overwork.", "Overwork."
@@ -402,7 +472,7 @@ Mada (Conjunction / Determiner): "Either."
 Mai (Verb): "To be."
 [============[START OF NEW]============]
 Maikanu (Verb): "To be able to.", "Able."
-Maikanu (-): "To be able to."
+Maikanu (Verb): "To be able to."
 [=============[END OF NEW]=============]
 Maino (Noun): "Being."
 Maiwa (Verb): "To have been."
@@ -425,12 +495,15 @@ Mid- (Fix): "Middle.", "Between."
 Midaran (Modifier / Noun): "Midday", "Noon."
 Miduring (Modifier / Noun): "Midnight."
 [============[START OF NEW]============]
-Mikanu (-): "To be capable of."
+Mikanu (Verb): "To be capable of."
 Mikanu-mikanu (-): "Capably."
 Mikanua (-): "Capability."
 Mikanung (-): "Capable."
 [=============[END OF NEW]=============]
 Mikiro (Verb): "To think", "Think."
+[============[START OF NEW]============]
+Mikro (-): "A shirt."
+[=============[END OF NEW]=============]
 Mileu (Verb): "To interest."
 Mileu-mileu (Adverb): "Interestingly."
 Mileung (Verb): "An interest."
@@ -440,6 +513,7 @@ Minusia (Verb): "To worsen."
 Minuso (-): "Worst."
 Miroa (Noun): "Thought."
 Mixru (Verb): "To mix.", "Mix."
+Modu (Noun): "Mode."
 Monbiluna (Noun): "December."
 Monera (Modifier / Noun): "Monday."
 Monlato (Noun): "Monogon."
@@ -447,9 +521,16 @@ Monluna (Noun): "January."
 Monmonluna (Noun): "November."
 Moski (-): "If"
 Muio (Noun): "A point. (As in a dot.)"
+[============[START OF NEW]============]
+Musenei (-): "Note (As in a musical note)."
+[=============[END OF NEW]=============]
 Musika (Noun): "Music."
 Musika-musika (Adverb): "Musically."
 Musikang (Adjective / Noun): "Musical.", "A musical."
+[============[START OF NEW]============]
+Mutu (Verb): "To terminate."
+Mutukua (-): "Terminal (as in a terminal disease)."
+Mutung (-): "Termination."
 [============================================]
 Na (-): "And."
 Nadei (Verb): "To show", "Show."
@@ -478,7 +559,15 @@ Napo (Verb): "To say.", "Say."
 Naru (Verb): "To lick", "Lick."
 Narume (Noun): "Sex."
 Nasta (Verb): "To stop", "Stop"
+[============[START OF NEW]============]
+Natu (-): "A costume."
+Natuixo (Verb): "To cosplay.", "A cosplay."
+[=============[END OF NEW]=============]
 Navi (Verb): "To navigate."
+[============[START OF NEW]============]
+Nayito (Verb): "To dress (something / someone)."
+Nayitosui (Verb): "To dress yourself up."
+[=============[END OF NEW]=============]
 Neka (Verb): "To press."
 Neo (Modifier): "New."
 Neoplus (Modifier): "Better than new."
@@ -532,14 +621,14 @@ Orso-orso (Adverb): "Lately."
 Orusaka (Verb): "To break.", "Break."
 [============[START OF NEW]============]
 Osetka (Verb): "To walk.", "Walk."
-Osetka (-): "To walk."
+Osetka (Verb): "To walk."
 [=============[END OF NEW]=============]
 Ositi (Verb): "To cuddle.", "Cuddle."
 [============[START OF NEW]============]
-Otrafiku. (-): "To photograph."
-Otrafikua. (-): "Photography (as in the art)."
-Otrafikuang. (-): "Photography (as in a photo)."
-Otrafikurua. (-): "Photographer."
+Otrafiku (Verb): "To photograph."
+Otrafikua (-): "Photography (as in the art)."
+Otrafikuang (-): "Photography (as in a photo)."
+Otrafikurua (-): "Photographer."
 [=============[END OF NEW]=============]
 Owu (Exclamation): "Well (As in an expression before a sentence)."
 Oxin (Verb / Noun): "To gift", "Gift."
@@ -547,12 +636,13 @@ Oxin (Verb / Noun): "To gift", "Gift."
 Pa (Preposition): "On (as in "On the counter")."
 Pa-pa (Adverb): "On (as in to indicate continuation)."
 Paixo (Verb): "To play (as in to play a game)."
-Paki (-): "Please (as in when asking something)."
+Paki (Adverb): "Please (as in when asking something)."
 Paniku (Verb / Noun): "To panic.", "Panic."
 Parama (Verb): "To pass.", "Pass."
 Paruma (Verb): "To come.", "Come."
 [============[START OF NEW]============]
-Pekali. (-): "Coeficient."
+Pekali (-): "Coeficient."
+Peo (-): "Dick."
 [=============[END OF NEW]=============]
 Piha (Noun): "Piece."
 Pilipinas (Noun): "The Philippines."
@@ -562,7 +652,7 @@ Plus (Modifier): "Better", "Better than... (can also be substituted with a ‘+�
 Plusia (Verb): "To better.", "To improve."
 Pomu (Noun): "Apple."
 Pos- (Fix): "After."
-Posdeiaran (Modifier / Noun): "Thedayaftertomorrow."
+Posdeiaran (Modifier / Noun): "The day after tomorrow."
 Poshikroni (-): "Soon."
 Poskinoni (Modifier / Noun): "Later", "Future."
 Potato (Noun): "Potato."
@@ -573,13 +663,13 @@ Prikinoni (Modifier / Noun): "Past"
 Priluna (Noun): "Last month."
 Priuring (Noun): "Last night."
 [============[START OF NEW]============]
-Prokto. (-): "Rectum."
+Prokto (-): "Rectum."
 [=============[END OF NEW]=============]
 Prosi-prosi (Adverb): "Away."
 Protipo (Noun): "Template (as in a template for something)."
 [============[START OF NEW]============]
-Pula. (-): "To group."
-Pulang. (-): "A group."
+Pula (Verb): "To group."
+Pulang (-): "A group."
 [============================================]
 -rua (Suffix): "Person that…"
 Rados (Modifier): "Glad."
@@ -588,6 +678,9 @@ Rakara (Verb): "To learn.", "Learn."
 Rami (-): "Multiple."
 Ramilato (-): "Polygon."
 Rapa (Modifier): "Bitter."
+[============[START OF NEW]============]
+Rapere (Verb): "To rape."
+[=============[END OF NEW]=============]
 Rapka (Verb): "To expect.", "Expect."
 Rapka-rapka (Adverb): "Expectedly."
 Ratu (Noun): "Rat."
@@ -599,7 +692,7 @@ Rea-rea (Adverb): "Affectedly."
 Redeve (Verb): "To Resume.", "Resume."
 Reftei (Verb): "To tangle.", "Tangle."
 [============[START OF NEW]============]
-Reko. (-): "Gram."
+Reko (-): "Gram."
 [=============[END OF NEW]=============]
 Rekuest (Verb): "To request.", "Request"
 Rekuesta (Noun): "A request."
@@ -627,6 +720,9 @@ Royoku (-): "Front."
 Rumu (Verb): "To go.", "Go."
 Rusiya (Noun): "Russia."
 [============================================]
+[============[START OF NEW]============]
+-sui (Fix): "Refering to oneself."
+[=============[END OF NEW]=============]
 Sadui (Modifier): "Spicy."
 Saigen (Verb): "To produce."
 Sakan (Noun): "Sugar."
@@ -644,10 +740,17 @@ Sanda (-): "While (as in "in a little while.")."
 Satua (Verb): "To hurt.", "Hurt."
 Satua-satua (Adverb): "Hurtfully."
 Satuang (Adjective): "Hurtful."
+[============[START OF NEW]============]
+Seneika (-): "Note (As in a note)."
+Senexoru (Verb): "To note down."
+[=============[END OF NEW]=============]
 Septera (Modifier): "Sunday."
 Septluna (Noun): "July."
 Sepu (Verb / Modifier): "To perfect", "Perfect."
 Sera (Modifier): "Old."
+[============[START OF NEW]============]
+Serno (-): "A crime."
+[=============[END OF NEW]=============]
 Serulo (Modifier): "Blue."
 Setai (-): "Setting."
 Setima (Noun): "Week."
@@ -658,14 +761,18 @@ Seuka (Noun): "An act (as in an action).", "An act (as in a perverted act)."
 Sibika (Verb): "To error.", "Error."
 Sihsa (Noun): "Affection."
 Sihu (Noun): "Net."
+[============[START OF NEW]============]
+Sivoivo (-): "Property (as in something that belongs to someone)."
+Skirta (-): "A skirt."
+[=============[END OF NEW]=============]
 Sneng (Noun): "Snake"
 Soire (Modifier / Noun): "Afternoon"
 Somno (Noun): "Sleep."
 Sonione (Verb): "To exist.", "Exist."
 Sono (Preposition): "Upon."
 [============[START OF NEW]============]
-Sui. (-): "Self."
-Suitifa. (-): "Paradox."
+Sui (-): "Self."
+Suitifa (-): "Paradox."
 [=============[END OF NEW]=============]
 Sukai (Preposition): "Like (in likeness)."
 Suko (Adjective): "Little."
@@ -673,6 +780,7 @@ Suruko (Verb): "To contain."
 [============================================]
 Tabung (Modifier): "Perhaps."
 [============[START OF NEW]============]
+Tadi (-): "Condemned."
 Tae (-): "Death."
 [=============[END OF NEW]=============]
 Tai (-): "Or."
@@ -687,6 +795,10 @@ Tasang (Adjective): "High."
 [============[START OF NEW]============]
 Tata (-): "Knife."
 Tatatae (-): "Knife fight to the death."
+Tei (-): "Formal."
+Tei-tei (-): "Formally."
+Teiguma (Verb): "To formalize."
+Teing (-): "Formality."
 [=============[END OF NEW]=============]
 Tekara (Verb / Noun): "To smell (as in to smell something).", "A smell."
 Templa (Noun): "Template."
@@ -694,11 +806,11 @@ Tengau (Verb): "To bite. ", "Bite."
 Teruka (Modifier): "Bad."
 Tidaino (-): "Otherwise."
 [============[START OF NEW]============]
-Tieisa. (-): "To straighten."
+Tieisa (Verb): "To straighten."
 Tieisang (-): "Straight."
-Tifa-tifa. (-): "Contradictorily."
-Tifa. (-): "Contradiction."
-Tifang. (-): "Contradictory."
+Tifa (-): "Contradiction."
+Tifa-tifa (-): "Contradictorily."
+Tifang (-): "Contradictory."
 [=============[END OF NEW]=============]
 Tila (Verb / Noun): "To taste", "Taste"
 Tilaika (Modifier): "Delicious", "Good-tasting."
@@ -715,7 +827,7 @@ Tridutu (Noun): "Triangle."
 Tridutukai (Adjective): "Triangular."
 Triluna (Noun): "March."
 [============[START OF NEW]============]
-Trima. (-): "Calibre."
+Trima (-): "Calibre."
 [=============[END OF NEW]=============]
 Trimera (Modifier): "Wednesday."
 Tselo (Verb): "To kiss.", "Kiss."
@@ -727,7 +839,7 @@ Tulo (Verb): "To sleep.", "Sleep."
 Tulong (Verb): "To fall asleep."
 [============[START OF NEW]============]
 Tundu (Noun): "Part."
-Tundu (-): "Part."
+Tundu (-): "﻿Part."
 [============================================]
 Uba (-): "With."
 Ukengi (Verb): "To entertain."
@@ -754,10 +866,19 @@ Unmada (Determiner): "Neither."
 Uno (Preposition): "Not."
 Unraha (-): "Never."
 Unsakui (-): "Nothing."
+[============[START OF NEW]============]
+Untei (-): "Informal."
+Untei-tei (-): "Informally."
+Unteiguma (Verb): "To informalize."
+Unteikro (-): "A t-shirt."
+Unteing (-): "Informality."
+[=============[END OF NEW]=============]
 Unu (Modifier): "Purple."
 Unysa (-): "Unpleasant."
 Unysafoni (-): "Noise."
 Uring (Noun): "Night."
+[============[START OF NEW]============]
+Usak (-): "Terminal (as in an airplane terminal)."
 [============================================]
 Vana (Adjective): "Slow."
 Vana-Vana (Adverb): "Slowly."
@@ -765,7 +886,7 @@ Vara (Adjective): "Fast."
 Vara-Vara (Adverb): "In a fast manner."
 [============[START OF NEW]============]
 Vasetka (Verb): "To run.", "Run."
-Vasetka (-): "To run."
+Vasetka (Verb): "To run."
 [=============[END OF NEW]=============]
 Vekivu (-): "Page (as in a web page)."
 Veko (-): "Web."
@@ -805,6 +926,8 @@ Xino (Verb): "To scratch."
 Xoru (Noun): "Down."
 Xotoku (Verb): "To get.", "To receive."
 Xouka (Noun): "Arm."
+[============[START OF NEW]============]
+Xusuya (-): "Property (as in an inherent quality of something)."
 [============================================]
 Ya (-): "But."
 Yaki (Verb / Noun): "To hug.", "Hug."

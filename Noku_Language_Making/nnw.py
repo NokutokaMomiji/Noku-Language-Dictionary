@@ -11,11 +11,20 @@
 import json
 from os import system
 
+def is_verb(defs):
+    for i in defs:
+        if i.lower().startswith("to"):
+            return True
+    return False
+
 system("cls") # Yeah, I use Windows. Don't @ me.
 
 # Paths to the files. You might need to change them.
 DATA_PATH: str = "data.json"
 NEW_WORDS_PATH: str = "NewWords.txt"
+
+CHECK_INTEGRITY = lambda x: x.upper() in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+REMOVE_ERRORS = lambda x: x.replace(" ", "").replace(".", "")
 
 # Dictionaries to store the data.
 word_data: dict[str] = {}
@@ -37,8 +46,11 @@ with open(NEW_WORDS_PATH, "r", encoding="utf-8") as new_words:
         if len(line_data) < 2 or line_data[1] == "" or line_data[1] == " ":
             print(f"[ERROR]: Missing data in line {num}: {line_data}")
             continue
+        
+        # Remove common errors.
+        line_data[1] = REMOVE_ERRORS(line_data[1])
 
-        # Check if the word already exists. Maybe I add an extra definition, so...
+        # Check if the word doesn't exist. If it doesn't, we create a new list of definitions for it.
         if line_data[1] not in new_word_data.keys():
             new_word_data[line_data[1]] = []
 
@@ -49,20 +61,29 @@ with open(NEW_WORDS_PATH, "r", encoding="utf-8") as new_words:
 print(new_word_data)
 # Merging new words with existing words so that I can make the full list.
 # I could just export the new words, but I want to have some reference of where they go on the dictionary.
-for word in new_word_data:
+for _word in new_word_data:
     # Data stored in the data.json file by my "nlutil" script (you should check if out if you're interested
     # in parsing) is stored following the following hierarchy:
     #   Letter -> List of Words -> Individual Word Data.
     # So, I just grab the first letter of the word and use it as the letter key.
+
+    # We remove some common mistakes I make when writing the data on the text file.
+    word = REMOVE_ERRORS(_word)
+
+    print(f"Word: \"{word}\".")
     letter = (word[1] if word[0] == "-" else word[0]).upper()
+    if (not CHECK_INTEGRITY(letter)):
+        print(f"[ERROR]: Word starts with an invalid character.")
+        exit(-1)
     letter_sect = word_data[letter]
     print(f"Letter: {letter}")
+
 
     # Creating the word data. The examples array is empty because examples are added manually on the Google Docs
     # document. There is no need for it right now.
     # Also, I know that most verbs will start with "to" at the beginning.
     # So, I can add the verb thing and save a bit of typing.
-    letter_sect["words"].append({"word": word, "type": ("Verb" if word.lower().startswith("to") else ("Fix" if word[0] == "-" else "-")), "definitions": new_word_data[word], "examples": []})
+    letter_sect["words"].append({"word": word, "type": ("Verb" if is_verb(new_word_data[word]) else ("Fix" if word[0] == "-" else "-")), "definitions": new_word_data[word], "examples": []})
 
 # Export data into txt file.
 # Using utf-8 for now. Damn you Python and the ANSI standard.
