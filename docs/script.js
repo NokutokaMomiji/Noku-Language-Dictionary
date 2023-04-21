@@ -28,7 +28,9 @@ function Setup(data) {
 }
 
 function RealSetter() {
+    console.log("Real setter...");
     if (hasLoaded && hasLoadedMeta) {
+        console.log("EVERYTHING IN ORDER!");
         setLetterList();
         setWordList();
         setWordPage();
@@ -408,11 +410,9 @@ function setCategoryList() {
         var letter = letters[l];
         var words = dictionaryData[letter]["words"];
         for (var i = 0; i < words.length; i++) {
-            console.log("Current type: " + words[i]["type"]);
             var hasType = words[i]["type"].includes(category);
             if (category == "Fix")
                 hasType = (words[i]["type"].includes("Suffix") || words[i]["type"].includes("Prefix"))
-            console.log("Has type: " + hasType);
             if (!hasType) {
                 continue;
             }
