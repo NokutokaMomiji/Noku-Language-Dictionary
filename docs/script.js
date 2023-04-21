@@ -380,8 +380,6 @@ function setCategoriesList() {
         newItem.appendChild(newItemLink);
         categoriesList.appendChild(newItem);
     }
-
-    setCategoryList();
 }
 
 function setCategoryList() {
