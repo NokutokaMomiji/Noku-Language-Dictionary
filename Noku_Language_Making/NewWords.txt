@@ -125,4 +125,5 @@ Dick. -> Peo
 To walk into a room or zone only to exit it immediately. -> Dalu
 To kill oneself. -> Kotosui
 To commit suicide. -> Kotosui
-To bully. -> Pol.
+To harass. -> Pol.
+Phobia. -> 

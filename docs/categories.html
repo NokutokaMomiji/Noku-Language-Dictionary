@@ -13,7 +13,7 @@
     <meta name="author" content="Nokutoka Momiji">
 
     <!-- Browser Title -->
-    <title>Words | Noku Language</title>
+    <title id="page-title">Noku Dictionary - Categories</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
@@ -24,7 +24,7 @@
         <div class="content-center">
             <div class="content-block">
                 <blockquote>
-                    <p>Noku Language Dictionary's <b>Word List</b> feature requires JavaScript to work. Please enable it, switch to a supported browser or use the <a href="https://docs.google.com/document/export?format=pdf&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A61%2C%22lplc%22%3A5%7D">Google Docs Document</a>.</p>
+                    <p>Noku Language Dictionary's <b>Category List</b> feature requires JavaScript to work. Please enable it, switch to a supported browser or use the <a href="https://docs.google.com/document/export?format=pdf&id=1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx&includes_info_params=true&cros_files=false&inspectorResult=%7B%22pc%22%3A61%2C%22lplc%22%3A5%7D">Google Docs Document</a>.</p>
                 </blockquote>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     </ul>
                 </li>
                 <li><a href="words.html?letter=A">Words</a></li>
-            <li><a href="categories.html?category=0">Categories</a></li>
+                <li><a href="categories.html?category=0">Categories</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="https://docs.google.com/document/d/1o37wxGVKjD7Y0m-wSIY2T8IX4aHma1fx/edit?usp=sharing&ouid=113385481694575437883&rtpof=true&sd=true">Document Version</a></li>
                 <li><!--<input type="text" placeholder="Search..." id="small-search-input" onkeyup="smallSearch()">--><a href="search.html"><ion-icon name="search">Search</ion-icon></a></li>
@@ -89,16 +89,15 @@
         <br>
         <div class="content-block">
             <h1>Indexes</h1>
-            <ul id="letter-list">
+            <ul id="categories-list">
 
             </ul>
         </div>
         <br>
         <br>
         <div class="content-block">
-            <h2 id="current-letter">?</h2>
-            <p id="letter-description">Please reload the page.</p>
-            <ul id="word-list">
+            <h2 id="current-category">Please reload the page.</h2>
+            <ul id="category-list">
 
             </ul>
         </div>
@@ -107,8 +106,7 @@
     <br>
     <script>
         function pageInit() {
-            setLetterList();
-            setWordList();
+            setCategoriesList();
         }
 
         //window.addEventListener("load", pageInit);

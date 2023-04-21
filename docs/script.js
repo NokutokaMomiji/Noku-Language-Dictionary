@@ -17,16 +17,24 @@ function otherSetup(data) {
     console.log("Other Setup Called!")
     Metadata = data;
     hasLoadedMeta = true;
-    setWordList();
+    RealSetter();
 }
 
 function Setup(data) {
     console.log("Setup called!")
     dictionaryData = data;
-    setLetterList();
-    setWordList();
-    setWordPage();
     hasLoaded = true;
+    RealSetter();
+}
+
+function RealSetter() {
+    if (hasLoaded && hasLoadedMeta) {
+        setLetterList();
+        setWordList();
+        setWordPage();
+        setCategoriesList();
+        setCategoryList();
+    }
 }
 
 function getLetters() {
@@ -87,7 +95,7 @@ function setWordList() {
         lastUpdate.innerText = "Last updated on " + date.getFullYear() + "/" + (actualMonth < 10 ? "0" + actualMonth : actualMonth) + "/" + (actualDate < 10 ? "0" + actualDate : actualDate);
     }
 
-    document.title = "Noku Language - " + letter;
+    document.title = letter + " | Noku Language";
     wordTitle.innerText = letter;
     wordDescription.innerText = dictionaryData[letter]["description"];
     console.log(words);
@@ -124,10 +132,12 @@ function setWordPage() {
     var contentAfter = document.getElementById("content-after");
     var beforeText = document.getElementById("before-text");
     var afterText = document.getElementById("after-text");
+    var pageTitle = document.getElementById("page-title-word");
 
     for (var i = 0; i < words.length; i++) {
         if (words[i]["word"] == word) {
             wordData = words[i];
+            pageTitle.textContent = word + " | " + "Noku Language";
             wordTitle.textContent = word;
             wordType.textContent = wordData["type"];
             if (wordData["type"].includes("Verb")) {
@@ -328,4 +338,95 @@ function fullSearchData(search_bar, matching_noku, matching_english, no_matches_
 
 function smallSearch() {
     
+}
+
+function setLetterList() {
+    var letters = getLetters();
+    var letterList = document.getElementById("letter-list");
+
+    if (letterList == undefined) {
+        return;
+    }
+
+    for (var i = 0; i < letters.length; i++) {
+        var newItem = document.createElement("li");
+        var newItemLink = document.createElement("a");
+        newItemLink.textContent = letters[i];
+        newItemLink.href = "words.html?letter=" + letters[i];
+        newItem.appendChild(newItemLink);
+        letterList.appendChild(newItem);
+    }
+}
+
+function getDictionary() {
+    return dictionaryData;
+}
+
+function setCategoriesList() {
+    console.log("Setting the list that contains all the categories...")
+    var categories = Metadata["categories"];
+    var categoriesList = document.getElementById("categories-list");
+
+    if (categoriesList == undefined)
+        return;
+
+    for (var i = 0; i < categories.length; i++) {
+        var newItem = document.createElement("li");
+        var newItemLink = document.createElement("a");
+        newItemLink.textContent = categories[i];
+        newItemLink.href = "categories.html?category=" + i;
+        newItem.appendChild(newItemLink);
+        categoriesList.appendChild(newItem);
+    }
+
+    setCategoryList();
+}
+
+function setCategoryList() {
+    console.log("Category list called...")
+
+    if (!hasLoadedMeta)
+        return;
+
+    var category = new URLSearchParams(window.location.search).get("category");
+    if (category == null) {
+        console.error("Category returned null.");
+        category = Metadata["categories"][0];
+    }
+    else
+    {
+        category = Metadata["categories"][category];
+    }
+
+    var wordTitle = document.getElementById("current-category");
+    var wordList = document.getElementById("category-list");
+
+    document.getElementById("page-title").innerText = category + " | " + "Noku Language";
+    wordTitle.innerText = category;
+    var letters = getLetters();
+    for (var l = 0; l < letters.length; l++) {
+        var letter = letters[l];
+        var words = dictionaryData[letter]["words"];
+        for (var i = 0; i < words.length; i++) {
+            console.log("Current type: " + words[i]["type"]);
+            var hasType = words[i]["type"].includes(category);
+            if (category == "Fix")
+                hasType = (words[i]["type"].includes("Suffix") || words[i]["type"].includes("Prefix"))
+            console.log("Has type: " + hasType);
+            if (!hasType) {
+                continue;
+            }
+
+            var newWord = document.createElement("li");
+            var newWordLink = document.createElement("a");
+            var newWordSpan = document.createElement("span");
+            var currentDefinition = words[i]["definitions"][0];
+            newWordSpan.textContent = "(" + words[i]["type"] + ") -> \"" + currentDefinition + "\" (...)";
+            newWordLink.textContent = words[i]["word"] + " ";
+            newWordLink.href = "word.html?letter=" + letter + "&word=" + words[i]["word"];
+            newWordLink.appendChild(newWordSpan);
+            newWord.appendChild(newWordLink);
+            wordList.appendChild(newWord);
+        }
+    }
 }

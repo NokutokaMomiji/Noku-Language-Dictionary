@@ -62,7 +62,7 @@ def array_remove_empty_lines(array: list) -> list:
         final_array.append(line) 
     return final_array
 
-def word_info_to_dict(info_line: str) -> dict[str, list[str]]:
+def word_info_to_dict(info_line: str) -> dict[str, str, list[str]]:
     # Words and their definitions are stored in the following format:
     #   Word (Type): "Definitions..."
     # So we split them by the colon.
@@ -158,6 +158,7 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
     # Metadata to display on Words page.
     metadata["num_of_words"] = 0
     metadata["timestamp"] = calendar.timegm(time.gmtime()) # Can't wait for Y2K38
+    metadata["categories"] = []
 
     while index < content_length:
         line = content[index]
@@ -209,6 +210,11 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
         word_info = word_info_to_dict(line)
         metadata["num_of_words"] += 1
         word_info["examples"] = []
+
+        temp_categories = word_info["type"].split(" / ")
+
+        for cat in temp_categories:
+            metadata["categories"].append(cat.replace("Suffix", "Fix").replace("Prefix", "Fix"))
 
         # Again, check if we can advance the index.
         if not can_advance_index(index, content_length):
@@ -278,6 +284,9 @@ def parse_words_to_json(file_path: str, metadata: dict) -> dict:
         os.remove("src/noku_language_words.txt")
     except:
         clog("[ERROR]: Failed to remove txt file.")
+
+    metadata["categories"] = list(set(metadata["categories"]))
+    metadata["categories"].sort()
 
     clog("CONVERSION FINISHED!")
     return data_dict

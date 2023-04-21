@@ -206,18 +206,18 @@ ion-icon {
     font-size: smaller;
 }
 
-#letter-list {
+#letter-list, #categories-list {
     margin-right: 32px;
 }
 
-#letter-list li {
+#letter-list li, #categories-list li {
     list-style-type: circle;
     display: inline-block;
     align-items: center;
     padding: 10px 10px;
 }
 
-#letter-list a {
+#letter-list a, #categories-list a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
@@ -227,7 +227,7 @@ ion-icon {
     border-style: none;
 }
 
-#letter-list a:hover {
+#letter-list a:hover, #categories-list a:hover {
     color: var(--background-color);
     background-color: var(--secondary-background-color);
     border-radius: 8px;
@@ -237,16 +237,16 @@ ion-icon {
     transition-duration: 30ms;
 }
 
-#word-list, #matching-noku, #matching-english, #matching-noku-mobile, #matching-english-mobile {
+#word-list, #matching-noku, #matching-english, #matching-noku-mobile, #matching-english-mobile, #category-list {
     text-align: left;
 }
 
-#word-list li, #matching-noku li, #matching-english li, #matching-noku-mobile li, #matching-english-mobile li {
+#word-list li, #matching-noku li, #matching-english li, #matching-noku-mobile li, #matching-english-mobile li, #category-list li {
     padding: 8px 10px;
     font-size: 18px;
 }
 
-#word-list a, #matching-noku a, #matching-english a, #matching-noku-mobile a, #matching-english-mobile a {
+#word-list a, #matching-noku a, #matching-english a, #matching-noku-mobile a, #matching-english-mobile a, #category-list a {
     text-align: left;
     color: var(--text-color);
     text-decoration: none;
@@ -254,19 +254,19 @@ ion-icon {
     padding: 8px;
 }
 
-#word-list a:hover, #matching-noku a:hover, #matching-english a:hover, #matching-noku-mobile a:hover, #matching-english-mobile a:hover {
+#word-list a:hover, #matching-noku a:hover, #matching-english a:hover, #matching-noku-mobile a:hover, #matching-english-mobile a:hover, #category-list a:hover {
     color: var(--background-color);
     background-color: var(--secondary-background-color);
     border-radius: 8px;
     padding: 8px;
 }
 
-#word-list a:hover > span, #matching-noku a:hover > span, #matching-english a:hover > span, #matching-noku-mobile a:hover > span, #matching-english-mobile a:hover > span {
+#word-list a:hover > span, #matching-noku a:hover > span, #matching-english a:hover > span, #matching-noku-mobile a:hover > span, #matching-english-mobile a:hover > span, #category-list a:hover > span {
     color: var(--background-color);
     font-weight: lighter;
 }
 
-#word-list a span, #matching-noku a span, #matching-english a span, #matching-noku-mobile a span, #matching-english-mobile a span {
+#word-list a span, #matching-noku a span, #matching-english a span, #matching-noku-mobile a span, #matching-english-mobile a span, #category-list a span {
     font-weight: lighter;
     font-style: italic;
     font-size: 17px;
@@ -499,7 +499,7 @@ table {
     text-align: center;
 }
 
-#page-title {
+#page-title-lol {
     text-align: center;
     color: var(--title-color);
     font-weight: 300;
