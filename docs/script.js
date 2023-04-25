@@ -105,7 +105,8 @@ function setWordList() {
         var newWord = document.createElement("li");
         var newWordLink = document.createElement("a");
         var newWordSpan = document.createElement("span");
-        newWordSpan.textContent = "(" + words[i]["type"] + ")";
+        var currentDefinition = words[i]["definitions"][0];
+        newWordSpan.textContent = "(" + words[i]["type"] + ") -> \"" + currentDefinition + "\" (...)";
         newWordLink.textContent = words[i]["word"] + " ";
         newWordLink.href = "word.html?letter=" + letter + "&word=" + words[i]["word"];
         newWordLink.appendChild(newWordSpan);
