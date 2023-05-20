@@ -1,6 +1,6 @@
-﻿Phobia. -> 
-Judgment. ->
-To judge. -> 
+﻿Phobia. -> Fobia.
+Judgment. -> Hakimikanu.
+To judge. -> Hakimi
 A gesture. -> 
 To gesture. -> 
 A disc -> 
