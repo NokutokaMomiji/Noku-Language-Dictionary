@@ -1,12 +1,12 @@
-﻿Phobia. -> Fobia.
-Judgment. -> Hakimikanu.
+﻿Phobia. -> Fobia
+Judgment. -> Hakimikanu
 To judge. -> Hakimi
-A gesture. -> 
-To gesture. -> 
-A disc -> 
-To snarl -> 
-A snarl -> 
-Throat -> 
+A gesture. -> Karang
+To gesture. -> Karana
+A disc -> Disiki
+To snarl -> Wuma
+A snarl -> Wumang
+Throat -> Laimo
 To arise. -> 
 Electronic. -> 
 Electronically. -> 
