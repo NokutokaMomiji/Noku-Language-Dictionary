@@ -7,10 +7,11 @@ A disc -> Disiki
 To snarl -> Wuma
 A snarl -> Wumang
 Throat -> Laimo
-To arise. -> 
-Electronic. -> 
-Electronically. -> 
-Electronic. ->
+To arise. -> Gruhi
+Electronics. -> Ektro
+Electronic. -> Ektroiko
+Electronically. -> Ektroiko-ektroiko
+Pertaining to. -> -iko
 The press (as in the news press). -> 
 To note (something down). -> 
 To note (as in to notice or pay particular attention to something). -> 
