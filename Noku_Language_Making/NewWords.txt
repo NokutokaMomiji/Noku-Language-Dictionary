@@ -7,70 +7,106 @@ A disc -> Disiki
 To snarl -> Wuma
 A snarl -> Wumang
 Throat -> Laimo
-To arise. -> 
-Electronic. -> 
-Electronically. -> 
-Electronic. ->
-The press (as in the news press). -> 
-To note (something down). -> 
-To note (as in to notice or pay particular attention to something). -> 
-A note (as in short informal letter or written message). -> 
-A layer. -> 
-To layer. -> 
-To forbid. -> 
-To be forbidden. -> 
-A key. -> 
-A key (as in a key element). -> 
-A habit. -> 
-A search. -> 
-To search. -> 
-To accept. -> 
-Artifical. ->
-Artificially. -> 
-Chest. -> 
-A sleeve. -> 
-A performer. -> 
-To perform. ->
-A performance. -> 
-To stumble. -> 
-Expertise. -> 
-Majority. -> 
-Spectrum. -> 
-Infinite. ->
-Infinity. -> 
-To make something infinite. -> 
-To explore. -> 
-Explorer. -> 
-Exploration. -> 
-To spread. -> 
-Dialogue. -> 
-To dialogue. -> 
-Dialog (as in a dialog box). -> 
-To bake. -> 
-Baked (as in a baked good). -> 
-To deposit. -> 
-A deposit. -> 
-A bag. -> 
-To bag (something). -> 
-To kidnap. -> 
-Kidnapping. -> 
-Kidnapper. -> 
-A unit. -> 
-To pluck. -> 
-To trip. -> 
-A trip. -> 
-Politics. -> 
-Political. ->
-Politically. -> 
-Politic. -> 
-Democracy. -> 
-Democratic. -> 
-Democratically. -> 
-To sympathize. -> 
-Sympathy. -> 
-To distribute. ->
-A distributor. -> 
-Distribution. -> 
-Philosophy. -> 
-Philosophical. -> 
-Philosopher. -> 
+To arise. -> Parumai
+Pertaining to. -> -iko
+To pertain. -> Miko
+Electron. -> Ektron
+Electronic. -> Ektroniko
+Electronically. -> Ektroniko-Ektroniko
+The press (as in the news press). -> Prensa
+Death. -> Memo.
+To note (something down). -> Moru
+To note (as in to notice or pay particular attention to something). -> Notare 
+A note (as in short informal letter or written message). -> Tatan
+A layer. -> Sitomang
+To layer. -> Sitoma
+To forbid. -> Apago
+A key. -> Yawi
+A key (as in a key element). -> Kaya
+A habit. -> Bata
+A search. -> Gitang
+To search. -> Gita 
+To accept. -> Awata
+Man-made. -> Imakuat
+Object. -> Obi
+Artifical. -> Imakuatobi.
+Artificially. -> Imakuatobi-Imakuatobi
+Low. -> Nisuki
+Higher. -> Hipatasa
+Upper. -> Hipaketa
+Lower. -> Hupanisuki
+A box. -> Aho
+To box. -> Ahong
+Chest (as in the human chest). -> Hipaketaho
+To store. -> Kansu
+A place. -> Bazo
+A store. -> Bazouka
+A Chest. -> Kansuho
+A sleeve. -> Zode
+A performer. -> Runirua
+To perform. -> Runi
+A performance. -> Runing
+To stumble. -> Mazu
+Expertise. -> Ziki
+Majority. -> Daugu
+Spectrum. -> Asma
+Infinite. -> Apeirong
+Infinity. -> Apeiro
+To make something infinite. -> Meniro
+To travel. -> Riyoko
+To search. -> Kenza
+To know. -> Koini
+Known. -> Koining
+Unknown. -> Unkoining
+Knowingly -> Koini-Koini
+To explore. -> Kenunkoi
+Explorer. -> Kenunkoirua
+Exploration. -> Kenunkoing
+To spread. -> Yeba
+Dialogue. -> Dialogong
+To dialogue. -> Dialogo
+Dialog (as in a dialog box). -> Kutuzu
+To bake. -> Urno
+Baked (as in a baked good). -> Urnoano
+To deposit. -> Yeto
+A deposit. -> Yetong
+A bag. -> Sumuka
+To bag (something). -> Sumu
+To kidnap. -> Niyuli
+Kidnapping. -> Niyuling
+Kidnapper. -> Niyulirua
+A unit. -> Nua
+To measure. -> Ruko
+A measure. -> Rukong
+A measurement. -> Rukong
+Weight. -> Imubang
+To weight. -> Imuba
+Speed. -> Ritaku
+To speed. -> Rita
+Velocity. -> Soku
+Force. -> Zikara
+To force. -> Zika
+To pluck. -> Puluku 
+To trip. -> Situru
+A trip. -> Siyoko
+Politics. -> Seiki
+Political. -> Seiking
+Politically. -> Seiki-Seiki
+Politic. -> Seikirua
+To govern. -> Seifu
+Government. -> Seifung
+Democracy. -> Imaseifu
+Democratic. -> Imaseifung
+Democratically. -> Imseifu-Imaseifu
+To sympathize. -> Kiyoko
+Sympathy. -> Kiyokong
+To distribute. -> Umaligi
+A distributor. -> Umaligirua
+Distribution. -> Umaliging
+Philosophy. -> Filo
+Philosophical. -> Filong
+Philosopher. -> Filorua
+To object. -> 
+Objection. -> 
+Adversary. ->
+Discourse. -> 

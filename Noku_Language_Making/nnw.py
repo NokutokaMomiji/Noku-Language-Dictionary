@@ -17,6 +17,21 @@ def is_verb(defs):
             return True
     return False
 
+def is_noun(defs):
+    for i in defs:
+        if i.lower().startswith("a "):
+            return True
+    return False
+
+def clog(text):
+    log.append(str(text))
+    print(text)
+
+def clog_export():
+    with open("log.log", "w", encoding="utf-8") as log_file:
+        for line in log:
+            log_file.write(line + "\n")
+
 system("cls") # Yeah, I use Windows. Don't @ me.
 
 # Paths to the files. You might need to change them.
@@ -30,6 +45,9 @@ REMOVE_ERRORS = lambda x: x.replace(" ", "").replace(".", "")
 word_data: dict[str] = {}
 new_word_data: dict[str] = {}
 
+# List for logging purposes.
+log = []
+
 # Info stored as a JSON File.
 with open(DATA_PATH, "r", encoding="utf-8") as data:
     word_data = json.load(data)
@@ -39,12 +57,12 @@ with open(NEW_WORDS_PATH, "r", encoding="utf-8") as new_words:
         # I store new words in the following format: Definition -> Word
         # So we split using the " -> "
         line_data: list[str] = line.replace("\n", "").split(" -> ")
-        print(line_data)
+        clog(line_data)
 
         # Sometimes I have words I have not made the translation for. So we skip them and give a reminder
         #   that it still hasn't been added.
         if len(line_data) < 2 or line_data[1] == "" or line_data[1] == " ":
-            print(f"[ERROR]: Missing data in line {num}: {line_data}")
+            clog(f"[ERROR]: Missing data in line {num}: {line_data}")
             continue
         
         # Remove common errors.
@@ -56,9 +74,9 @@ with open(NEW_WORDS_PATH, "r", encoding="utf-8") as new_words:
 
         # Add definition to word definition list.
         new_word_data[line_data[1]].append(line_data[0])
-        print("Added word \"" + line_data[1] + " | " + line_data[0])
+        clog("Added word \"" + line_data[1] + " | " + line_data[0])
 
-print(new_word_data)
+clog(new_word_data)
 # Merging new words with existing words so that I can make the full list.
 # I could just export the new words, but I want to have some reference of where they go on the dictionary.
 for _word in new_word_data:
@@ -70,20 +88,20 @@ for _word in new_word_data:
     # We remove some common mistakes I make when writing the data on the text file.
     word = REMOVE_ERRORS(_word)
 
-    print(f"Word: \"{word}\".")
+    clog(f"Word: \"{word}\".")
     letter = (word[1] if word[0] == "-" else word[0]).upper()
     if (not CHECK_INTEGRITY(letter)):
-        print(f"[ERROR]: Word starts with an invalid character.")
+        clog(f"[ERROR]: Word starts with an invalid character.")
         exit(-1)
     letter_sect = word_data[letter]
-    print(f"Letter: {letter}")
+    clog(f"Letter: {letter}")
 
 
     # Creating the word data. The examples array is empty because examples are added manually on the Google Docs
     # document. There is no need for it right now.
     # Also, I know that most verbs will start with "to" at the beginning.
     # So, I can add the verb thing and save a bit of typing.
-    letter_sect["words"].append({"word": word, "type": ("Verb" if is_verb(new_word_data[word]) else ("Fix" if word[0] == "-" else "-")), "definitions": new_word_data[word], "examples": []})
+    letter_sect["words"].append({"word": word, "type": ("Verb" if is_verb(new_word_data[word]) else ("Fix" if word[0] == "-" else ("Noun" if is_noun(new_word_data[word]) else "-"))), "definitions": new_word_data[word], "examples": []})
 
 # Export data into txt file.
 # Using utf-8 for now. Damn you Python and the ANSI standard.
@@ -111,12 +129,13 @@ with open("export.txt", "w", encoding="utf-8") as export_file:
             the_word = word["word"]
             the_type = word["type"]
             the_defs = word["definitions"]
-            print(f"Writing {the_word} ({the_type}):")
+            clog(f"Writing {the_word} ({the_type}):")
             export_file.write(f"{the_word} ({the_type}): ")
+
             # Could use a range with the list length, but this is easier and just gives me immediate access to
             # what I need.
             for _index, _def in enumerate(the_defs):
-                print(f"    - {_index}: \"{_def}\"")
+                clog(f"    - {_index}: \"{_def}\"")
                 # This is just to properly write the definitions. I don't want a remaining comma and space that
                 # aren't needed. It just looks bad.
                 if _index != len(the_defs) - 1:
@@ -124,4 +143,6 @@ with open("export.txt", "w", encoding="utf-8") as export_file:
                 else:
                     export_file.write(f"\"{_def}\"\n")
 
-print("Exported.")
+clog("Exported.")
+
+clog_export()
