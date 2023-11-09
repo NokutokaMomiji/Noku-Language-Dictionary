@@ -19,7 +19,7 @@ def is_verb(defs):
 
 def is_noun(defs):
     for i in defs:
-        if i.lower().startswith("a "):
+        if i.lower().startswith("a ") or i.lower().startswith("an "):
             return True
     return False
 

@@ -1,112 +1,238 @@
-﻿Phobia. -> Fobia
-Judgment. -> Hakimikanu
-To judge. -> Hakimi
-A gesture. -> Karang
-To gesture. -> Karana
-A disc -> Disiki
-To snarl -> Wuma
-A snarl -> Wumang
-Throat -> Laimo
-To arise. -> Parumai
-Pertaining to. -> -iko
-To pertain. -> Miko
-Electron. -> Ektron
-Electronic. -> Ektroniko
-Electronically. -> Ektroniko-Ektroniko
-The press (as in the news press). -> Prensa
-Death. -> Memo.
-To note (something down). -> Moru
-To note (as in to notice or pay particular attention to something). -> Notare 
-A note (as in short informal letter or written message). -> Tatan
-A layer. -> Sitomang
-To layer. -> Sitoma
-To forbid. -> Apago
-A key. -> Yawi
-A key (as in a key element). -> Kaya
-A habit. -> Bata
-A search. -> Gitang
-To search. -> Gita 
-To accept. -> Awata
-Man-made. -> Imakuat
-Object. -> Obi
-Artifical. -> Imakuatobi.
-Artificially. -> Imakuatobi-Imakuatobi
-Low. -> Nisuki
-Higher. -> Hipatasa
-Upper. -> Hipaketa
-Lower. -> Hupanisuki
-A box. -> Aho
-To box. -> Ahong
-Chest (as in the human chest). -> Hipaketaho
-To store. -> Kansu
-A place. -> Bazo
-A store. -> Bazouka
-A Chest. -> Kansuho
-A sleeve. -> Zode
-A performer. -> Runirua
-To perform. -> Runi
-A performance. -> Runing
-To stumble. -> Mazu
-Expertise. -> Ziki
-Majority. -> Daugu
-Spectrum. -> Asma
-Infinite. -> Apeirong
-Infinity. -> Apeiro
-To make something infinite. -> Meniro
-To travel. -> Riyoko
-To search. -> Kenza
-To know. -> Koini
-Known. -> Koining
-Unknown. -> Unkoining
-Knowingly -> Koini-Koini
-To explore. -> Kenunkoi
-Explorer. -> Kenunkoirua
-Exploration. -> Kenunkoing
-To spread. -> Yeba
-Dialogue. -> Dialogong
-To dialogue. -> Dialogo
-Dialog (as in a dialog box). -> Kutuzu
-To bake. -> Urno
-Baked (as in a baked good). -> Urnoano
-To deposit. -> Yeto
-A deposit. -> Yetong
-A bag. -> Sumuka
-To bag (something). -> Sumu
-To kidnap. -> Niyuli
-Kidnapping. -> Niyuling
-Kidnapper. -> Niyulirua
-A unit. -> Nua
-To measure. -> Ruko
-A measure. -> Rukong
-A measurement. -> Rukong
-Weight. -> Imubang
-To weight. -> Imuba
-Speed. -> Ritaku
-To speed. -> Rita
-Velocity. -> Soku
-Force. -> Zikara
-To force. -> Zika
-To pluck. -> Puluku 
-To trip. -> Situru
-A trip. -> Siyoko
-Politics. -> Seiki
-Political. -> Seiking
-Politically. -> Seiki-Seiki
-Politic. -> Seikirua
-To govern. -> Seifu
-Government. -> Seifung
-Democracy. -> Imaseifu
-Democratic. -> Imaseifung
-Democratically. -> Imseifu-Imaseifu
-To sympathize. -> Kiyoko
-Sympathy. -> Kiyokong
-To distribute. -> Umaligi
-A distributor. -> Umaligirua
-Distribution. -> Umaliging
-Philosophy. -> Filo
-Philosophical. -> Filong
-Philosopher. -> Filorua
-To object. -> 
-Objection. -> 
-Adversary. ->
-Discourse. -> 
+﻿An agreement. -> Nyetung
+Agreement. -> Nyetung
+To disagree. -> Unnyetu
+A disagreement. -> Unnyetung
+Disagreement. -> Unnyetung
+To object. -> Naeunyetu
+To express agreement. -> Naenyetu
+Objection. -> Naeunyetung
+Opponent. -> Senaiterua
+To oppose. -> Senaite
+Adversary. -> Senaiterua
+Discourse. -> Danwa
+Tank. -> Tanki
+Cigar. -> Puro
+Gallery. -> Galira
+Department. -> Fako
+To depart. -> Fori
+Departure. -> Foring
+Area. -> Lawa
+Perimeter. -> Ligirukong
+Extent. -> Lua
+Volume. -> Luatokui
+A volume (relating to books). -> Volumin
+Quantity. -> Kuantiti
+A quantity. -> Kuantiti
+A substance. -> Hang
+Matter (as in ). -> Jojihang
+Mass. -> Kuajihang
+To derive. -> Taka
+Derivation. -> Takang
+Derivative. -> Takateba
+Energy. -> Kerijakanu
+Work (as in power). -> Kerija
+Stand. -> Diri
+Constant. -> Ubadiri
+Change. -> Isti
+A constant. -> Unistikua
+Duck. -> Tirinko
+To scrape. -> Radere
+To erase. -> Prosiradere
+Eraser. -> Prosiraderekua
+Pencil. -> Pinsela
+Pen. -> Pena
+To clip. -> Kipana
+A clip. -> Kipu
+Paper. -> Pariru
+Paperclip. -> Parirukipu
+To highlight. -> Kunoluma
+Highlighter. -> Kunolumakua
+Ruler (as in the tool for measurement) -> Rukokua
+Ruler (as in a person who rules) -> Gurarua
+Together. -> Kom-
+To rule. -> Gura
+To step. -> Setepe
+A step (as in a step in a sequence of instructions). -> Lepe
+A step (as in walking, etc...). -> Setepeng 
+A compass. -> Komsetepe
+A protractor. -> Rankusa
+To cut. -> Kuturi
+Cutter. -> Kuturikua
+Scissors. -> Sisoria
+To intensify. -> Kosuraka
+Intensification. -> Tirakang
+Intense. -> Tiraka
+To cause. -> Kosu-
+Sharpener. -> Kosurakakua
+A gear. -> Girara
+To risk. -> Risko
+A risk. -> Riskong
+Calculator (as in a tool for making calculations). -> Kahawakua
+Calculator (as in a person who makes calculations). -> Kahawarua
+A calculation. -> Kahawang
+To calculate. -> Kahawa
+To take. -> Xirea
+A take. -> Xirean
+Mathematics. -> Gakuma
+Mathematical. -> Gakumang
+Mathematically -> Gakuma-gakuma
+Maths. -> Gaku
+Math. -> Gaku
+Ink. -> Inkai
+Man. -> Lakiti
+Woman. -> Akiti
+
+Liberal. -> Espartero
+An attack tank. -> Atanki
+Infinite. -> Ourai
+A case. -> 
+Agenda. -> 
+An agenda. -> 
+A schedule. -> 
+A timetable. -> 
+High school. ->
+Middle school. -> 
+Primary school. -> 
+Kindergarden. -> 
+Preschool. -> 
+School. -> 
+Brush. -> 
+To paint. -> 
+A painting. -> 
+A painter. -> 
+A painting tool. -> 
+Geography. -> 
+Geographical. -> 
+Cartographer. -> 
+Cartography. -> 
+Cartographical. -> 
+Change (as in money). -> 
+Dynamic. -> Ubadiristi
+Dynamics (in music). -> 
+Dynamics (in physics). -> 
+Motion. -> 
+Picture. -> 
+Soundtrack. -> 
+Background. ->
+Foreground. -> 
+Ground. -> 
+Curve. -> 
+Curvature. -> 
+Curvaceous. -> 
+Shapely. -> 
+Volumptuous. -> 
+Full-figured. -> 
+Rounded. -> 
+Buxom. -> 
+Bosomy. -> 
+Full-bosomed -> 
+Big-breasted. -> 
+Large-breasted. -> 
+Full-breasted. -> 
+Junoesque. -> 
+Rubensesque. -> 
+Opulent. -> 
+Seductive. -> 
+Sexy. -> 
+Alluring -> 
+Sultry. -> 
+Sensuous. -> 
+Well-endowed. -> 
+Pneumatic. -> 
+Optimistic. -> 
+Well-upholstered. -> 
+Busty. -> 
+Bust. -> 
+Chesty. -> 
+Thick. -> 
+Comely. -> 
+Skinny. -> 
+Boyish. -> 
+Girlish. -> 
+Right (as in correct). -> 
+Correct. -> 
+To correct. -> 
+Plain. ->
+Plane. -> 
+Word. -> 
+Sentence. -> 
+Phrase. -> 
+Paragraph. -> 
+Text. -> 
+To text. -> 
+Essay. -> 
+A letter (as in a character). -> 
+A letter (as in written, typed, or printed communication). -> 
+To search. -> 
+A search. -> 
+History. -> 
+A story. -> 
+To point. ->
+To point out. -> 
+Intersection. -> 
+To intersect. -> 
+Function. -> 
+Garbage. -> 
+To collect. -> 
+To translate. -> 
+To write. -> 
+To read. -> 
+To sign (as in to write someone's name to identify oneself as the writer or sender). -> 
+To sign (as in to use gestures to convey information or instructions). -> 
+A sign (as in a gesture or action used to convey information or instructions). -> 
+A sign (as in an object, quality, or event whose presence or occurence indicates the probable presence or occurrence of something else). -> 
+An infant. -> 
+A paradox. -> 
+Paradoxical. -> 
+Paradoxically. -> 
+Insufferable. -> 
+Insufferably. -> 
+Inflammable. -> 
+A graph. -> 
+A table (as in a table). -> 
+A table (as in a data element). -> 
+Milk. -> Miruku
+School -> 
+To parameterize. -> 
+A parameter. -> 
+Husband. -> 
+Wife. -> 
+Married partner. -> 
+Married. -> 
+To marry. -> 
+Partner. -> 
+A sprain. -> 
+To sprain. -> 
+National. -> 
+To nationalize. -> 
+An anthem. -> 
+A kid. -> 
+To kid. -> 
+A page. -> 
+To page. -> 
+Variable. -> 
+A variable. -> 
+To vary. -> 
+Variably. -> 
+An archive. -> 
+To archive. -> 
+Archiver. -> 
+Goddess. -> 
+Victory. -> 
+To win. -> 
+A win. -> 
+A loss. -> Walang
+Fake. -> 
+A fake. -> 
+To fake. -> 
+To falsify. -> 
+Falsification. -> 
+To forge. -> 
+Forgery. -> 
+A fraud. -> 
+To defraud. -> 
+Fraudulent. -> 
+Fradulently. -> 
+To prove. -> 
+Proof. -> 
+A proof. -> 

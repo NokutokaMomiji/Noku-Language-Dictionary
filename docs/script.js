@@ -1,3 +1,13 @@
+/*
+    script.js
+    Nokutoka Momiji
+    
+    Copyright (C) 2023 Nokutoka Momiji
+
+    This is the single JavaScript file that powers the entire Noku Language Dictionary webpage.
+    It is a huge undocumented mess. Enjoy!  qs
+*/
+
 var dictionaryData = {};
 var Metadata = {};
 var hasLoaded = false;
