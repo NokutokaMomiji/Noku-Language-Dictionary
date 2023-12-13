@@ -1,92 +1,67 @@
-﻿An agreement. -> Nyetung
-Agreement. -> Nyetung
-To disagree. -> Unnyetu
-A disagreement. -> Unnyetung
-Disagreement. -> Unnyetung
-To object. -> Naeunyetu
-To express agreement. -> Naenyetu
-Objection. -> Naeunyetung
-Opponent. -> Senaiterua
-To oppose. -> Senaite
-Adversary. -> Senaiterua
-Discourse. -> Danwa
-Tank. -> Tanki
-Cigar. -> Puro
-Gallery. -> Galira
-Department. -> Fako
-To depart. -> Fori
-Departure. -> Foring
-Area. -> Lawa
-Perimeter. -> Ligirukong
-Extent. -> Lua
-Volume. -> Luatokui
-A volume (relating to books). -> Volumin
-Quantity. -> Kuantiti
-A quantity. -> Kuantiti
-A substance. -> Hang
-Matter (as in ). -> Jojihang
-Mass. -> Kuajihang
-To derive. -> Taka
-Derivation. -> Takang
-Derivative. -> Takateba
-Energy. -> Kerijakanu
-Work (as in power). -> Kerija
-Stand. -> Diri
-Constant. -> Ubadiri
-Change. -> Isti
-A constant. -> Unistikua
-Duck. -> Tirinko
-To scrape. -> Radere
-To erase. -> Prosiradere
-Eraser. -> Prosiraderekua
-Pencil. -> Pinsela
-Pen. -> Pena
-To clip. -> Kipana
-A clip. -> Kipu
-Paper. -> Pariru
-Paperclip. -> Parirukipu
-To highlight. -> Kunoluma
-Highlighter. -> Kunolumakua
-Ruler (as in the tool for measurement) -> Rukokua
-Ruler (as in a person who rules) -> Gurarua
-Together. -> Kom-
-To rule. -> Gura
-To step. -> Setepe
-A step (as in a step in a sequence of instructions). -> Lepe
-A step (as in walking, etc...). -> Setepeng 
-A compass. -> Komsetepe
-A protractor. -> Rankusa
-To cut. -> Kuturi
-Cutter. -> Kuturikua
-Scissors. -> Sisoria
-To intensify. -> Kosuraka
-Intensification. -> Tirakang
-Intense. -> Tiraka
-To cause. -> Kosu-
-Sharpener. -> Kosurakakua
-A gear. -> Girara
-To risk. -> Risko
-A risk. -> Riskong
-Calculator (as in a tool for making calculations). -> Kahawakua
-Calculator (as in a person who makes calculations). -> Kahawarua
-A calculation. -> Kahawang
-To calculate. -> Kahawa
-To take. -> Xirea
-A take. -> Xirean
-Mathematics. -> Gakuma
-Mathematical. -> Gakumang
-Mathematically -> Gakuma-gakuma
-Maths. -> Gaku
-Math. -> Gaku
-Ink. -> Inkai
-Man. -> Lakiti
-Woman. -> Akiti
-
-Liberal. -> Espartero
+﻿Liberal. -> Espartero
 An attack tank. -> Atanki
 Infinite. -> Ourai
-A case. -> 
-Agenda. -> 
+A case (as in a container designed to hold or protect something). -> Jisukua
+An instance. -> Wabang
+To instance. -> Waba
+A situation. -> Zire
+An incident. -> Jadi.
+Legal. -> Lakali
+Legality. -> Lakaling
+Ilegal. -> Unlakali
+Illegality. -> Unlakaling
+Legalize. -> Menilakali
+Illegalize. -> Meniunlakali
+To trace. -> Zui
+A trace. -> Zuing
+Into. -> Dalani
+To investigate. -> Dalanizui
+Investigation. -> Dalanizuing.
+A case (as in an instance of a particular situation). -> Wabazire
+A case (as in an incident under investigation by authorities). -> Dalanizuire
+A case (as in a legal action). -> Lakalire
+To write. -> Sumu
+Writing. -> Sumupiha
+Writer (as in a person that writes). -> Sumurua
+Writer (as in a thing that writes). -> Sumukua
+Ability to write. -> Sumukanu
+Ability to read. -> Sahikanu
+Unable. -> Unmaikanu
+To read. -> Sahi
+A device. -> Miasi
+To devise. -> Noisei
+Embryo. -> Dalanifeti
+Fetus. -> Feti
+Pregnant. -> Enkiyo
+To fertilize. -> Puku
+Fertilization. -> Pukung
+To impregnate. -> Kosenkiyo
+Impregnation. -> Kosenkiyong
+Semen. -> Serere.
+To inseminate. -> Dabuserere
+Insemination. -> Dabuserereng
+Fruit. -> Delma
+Fruitful. -> Delmatiu
+To fecundate. -> Ukudelmatiu
+Fecundation. -> Ukudelmatiung
+To polinate. -> Feko
+Polinization. -> Fekong
+Fertilizer. -> Pukukua
+Cause. -> Kos-
+Insert. -> Dabu
+To conceive (as in reproduction). -> Ukuenkiyo
+To conceive (as in to formulate). -> Hami
+Conception (in reproduction). -> Ukuenkiyong
+Conception (in formulation, etc). -> Haming
+To implement. -> Sakana
+A gadget. -> Gawa
+A utensil. -> 
+A tool. ->
+An appliance. -> 
+Reader (as in a person that reads something). -> Sahirua
+Readable. -> 
+Readability. -> 
+An agenda (as in a list of items to be discussed at a formal meeting). -> Miatza
 An agenda. -> 
 A schedule. -> 
 A timetable. -> 
@@ -101,6 +76,7 @@ To paint. ->
 A painting. -> 
 A painter. -> 
 A painting tool. -> 
+Earth. -> 
 Geography. -> 
 Geographical. -> 
 Cartographer. -> 
